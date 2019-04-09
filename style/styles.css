@@ -16,8 +16,7 @@ body{
     left: 4%;
 }
 .logoSvg{
-    height: 174px;
-    width: 639px;
+    width: 24vw;
 }
 .loginMenu{
     position: absolute;
@@ -30,8 +29,7 @@ body{
     position: absolute;
     top: 4%;
     right: 4%;
-    height: 182px;
-    width: 182px;
+    width: 15vw;
     border-radius: 100%
 }
 .loginAction{
@@ -47,7 +45,7 @@ opacity:0
 .downBar{
     width: 100%;
     background-color: antiquewhite;
-    height: 210px;
+    height: 14vh;
     position: absolute;
     bottom: 0%
 }
@@ -56,16 +54,16 @@ opacity:0
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 20%
+    bottom: 15%
 }
 .searchInput{
     width: 90%;
-    height: 120px;
+    height: 6vh;
     border-radius: 40px;
-    font-size: 42pt;
+    font-size: 5vw;
     display: flex;
     align-items: center;
-    padding-top: 4%;
+    padding-top: 2vh;
     padding-left: 20px;
     border: none;
 }
