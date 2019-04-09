@@ -1,0 +1,71 @@
+body{
+    padding:0;
+    margin:0;
+    height: 100vh;
+    width: 100vw;
+}
+.background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -100;
+}
+.logo{
+    position: absolute;
+    top: 4%;
+    left: 4%;
+}
+.logoSvg{
+    height: 174px;
+    width: 639px;
+}
+.loginMenu{
+    position: absolute;
+    top: 4%;
+    right: 0%;
+    height: 100%;
+    width: 100%;
+}
+.loginImage{
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    height: 182px;
+    width: 182px;
+    border-radius: 100%
+}
+.loginAction{
+    opacity:0;
+}
+.signupAction{
+opacity:0
+}
+.login{
+    opacity:0;
+    position: absolute;
+}
+.downBar{
+    width: 100%;
+    background-color: antiquewhite;
+    height: 210px;
+    position: absolute;
+    bottom: 0%
+}
+.searchBar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20%
+}
+.searchInput{
+    width: 90%;
+    height: 120px;
+    border-radius: 40px;
+    font-size: 42pt;
+    display: flex;
+    align-items: center;
+    padding-top: 4%;
+    padding-left: 20px;
+    border: none;
+}
