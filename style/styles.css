@@ -45,16 +45,18 @@ opacity:0
 .downBar{
     width: 100%;
     background-color: antiquewhite;
-    height: 14vh;
+    height: 10vh;
     position: absolute;
-    bottom: 0%
+    bottom: 0%;
+    display: flex;
+    justify-content: space-between
 }
 .searchBar{
     width: 100%;
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 15%
+    bottom: 12%
 }
 .searchInput{
     width: 90%;
@@ -66,4 +68,10 @@ opacity:0
     padding-top: 2vh;
     padding-left: 20px;
     border: none;
+}
+
+.downIcon{
+    width: 10vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
