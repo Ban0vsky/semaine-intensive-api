@@ -2,6 +2,8 @@
 
     <img class="background" src="assets/images/background.jpg" alt="map_placeholder">
     <div class="login">
+        <img class="signupImage" src="assets/images/profilepic.png" alt="profile_placeholder">
+        <p class="welcomeText">Première cuite ?</p>
          <h1 class="signupButton logs">S'inscrire</h1>
          <h1 class="loginButton logs">Se connecter</h1>
              <div class="loginAction logForms">
@@ -26,7 +28,7 @@
              </div>
     </div>
         <form class="searchBar" action="#" method="post">
-                <textarea class="searchInput" required name="street_choice" cols="50" rows="5" placeholder="Soif de quelle rue?"></textarea>
+                <input class="searchInput" required name="street_choice" cols="50" rows="5" placeholder="Soif de quelle rue?"></textarea>
                 <input class="start" type="submit">
         </form>
     <div class="launcher">
