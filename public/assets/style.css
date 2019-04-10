@@ -136,39 +136,60 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.searchBottomPanel{
+    width:90vw;
+    position: absolute;
+    left: 5vw;
+    bottom: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .searchBar{
-    width: 90vw;
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 13vh;
     background: white;
     border-radius: 5px;
-    left: 5vw;
     align-items: center;
+    width: 70vw;
 }
 .searchInput{
-    height:7vh;
+    height: 7vh;
     border: none;
     background: transparent;
     display: flex;
     align-items: center;
-    width:100%;
+    width: 100%;
     margin-left: 5vw;
     font-size: 1em;
+    padding: 0;
 }
 .searchInput::placeholder
 {
     color: #EDC02C;
 }
-.start{
-    width: 10vw;
-    height: 10vh;
-    position: absolute;
-    right: 10vw;
+.searchBottomPanel a{
+    height: 7vh;
+    width: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-
+.geolocIcon{
+    width: 8vw;
+    background: white;
+    border-radius: 5px;
+    padding: 2vw;
+}
+.start{
+    height: 7vh;
+    color: white;
+    background: #EDC02C;
+    border: none;
+    padding: 0 5vw;
+    border-radius: 0 5px 5px 0;
+    font-size: 1em;
+}
 .downIcon{
     width: 7vw;
     margin-left: 12vw;
@@ -187,38 +208,70 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 68vh;
+    margin-top: 75vh;
     opacity:0;
     z-index: -99999;
 }
 .launch{
-    height: 6vh;
-    font-size: 8vw;
-    width: 90 vw;
-    background-color: antiquewhite;
+    height: 8vh;
+    font-size: 1.2em;
+    width: 90vw;
+    background-color: white;
     justify-content: center;
+    color: #EDC02C;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 5px 5px 0px 0px;
+}
+.launch p{
+    margin: 0;
 }
 .canceller{
     height: 5vh;
-    font-size: 8vw;    
-    width: 90 vw;
-    background-color: antiquewhite;
+    font-size: 1em;    
+    width: 90vw;
+    background-color: #C62727;
     justify-content: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 0px 5px 5px;
+}
+.canceller p
+{
+    margin: 0;
 }
 .progressBar{
     width: 100%;
+    height: 10vh;
     position: absolute;
-    bottom: 12vh;
+    bottom: 10vh;
     display: flex;
-    justify-content: space-between;
-    opacity:0;
+    justify-content: center;
+    opacity: 0;
     z-index: -99999;
+    background: white;
+    align-items: center;
 }
-.infos{
-    margin-left: 10vw;
-    margin-right: 10vw;
+.progressBarInside
+{
+    display: flex;
+    width: 85vw;
+    justify-content: space-between;
+    align-items: center;
 }
-
+.stopButton{
+    height: 7vh;
+}
+.timer{
+    font-size: 1.5em;
+}
+.birzProgress
+{
+    height: 5vh;
+}
 
 
 .downBarInfos{

@@ -15,6 +15,7 @@ const historyData = document.querySelector('.historyData')
 const leaderboardData = document.querySelector('.leaderboardData')
 const friendListData = document.querySelector('.friendListData')
 const downBarInfos = document.querySelector('.downBarInfos')
+let closeButton = document.querySelectorAll('.closeButton')
 
 loginImage.addEventListener('click', () =>
 {
@@ -94,3 +95,14 @@ background.addEventListener('click', () =>
         console.log("yes")
       }
 })
+
+for (var j = 0; j < closeButton.length; j++) {
+closeButton[j].addEventListener('click', () =>
+{
+    let visible = document.querySelectorAll('.visible')
+    for (var i = 0; i < visible.length; i++) {
+        visible[i].classList.remove('visible')
+        console.log("yes")
+      }
+})
+}
