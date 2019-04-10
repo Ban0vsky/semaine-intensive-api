@@ -9,6 +9,21 @@ const widgetAddress = document.querySelector('.card .address')
 let heatMapData = []
 let heatMap
 
+if (latitude==0 && longitude==0)
+{
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } 
+    else {
+        console.log('no')
+    }
+
+    function showPosition(position) {
+    latitude = position.coords.latitude
+    longitude = position.coords.longitude
+    }
+}
+
 function initMap() 
 {
     let latLng = new google.maps.LatLng(latitude,longitude)
@@ -77,4 +92,3 @@ function widget(name, address)
     widgetAddress.innerHTML = address
 }
 
-console.log('yo')

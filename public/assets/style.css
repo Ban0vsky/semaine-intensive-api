@@ -213,6 +213,7 @@ body{
 .map {
     width: 100vw;
     height: 94vh;
+    z-index: -10;
 }
 
 .card{
