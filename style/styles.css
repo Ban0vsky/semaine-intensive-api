@@ -18,13 +18,7 @@ body{
 .logoSvg{
     width: 24vw;
 }
-.loginMenu{
-    position: absolute;
-    top: 4%;
-    right: 0%;
-    height: 100%;
-    width: 100%;
-}
+
 .loginImage{
     position: absolute;
     top: 4%;
@@ -34,13 +28,40 @@ body{
 }
 .loginAction{
     opacity:0;
+    z-index: -99999;
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 .signupAction{
-opacity:0
+    opacity:0;
+    z-index: -99999;
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.input{
+    width: 45vw;
+    height: 5vh;
 }
 .login{
     opacity:0;
+    z-index: -99999;
     position: absolute;
+    height: 55vh;
+    width: 75vw;
+    background-color: black;
+    color: antiquewhite;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    top: 20vh;
+    left: 13vw;
+}
+.logForms{
+    margin-top: 25vh;
 }
 .downBar{
     width: 100%;
@@ -74,4 +95,53 @@ opacity:0
     width: 10vw;
     margin-left: 10vw;
     margin-right: 10vw;
+}
+
+.logs{
+    opacity:0;
+    z-index: -99999;
+}
+
+.launcher{
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 68vh;
+    opacity:0;
+    z-index: -99999;
+}
+.launch{
+    height: 5vh;
+    font-size: 8vw;
+
+    background-color: antiquewhite;
+    justify-content: center;
+}
+.canceller{
+    height: 5vh;
+    font-size: 8vw;    
+
+    background-color: antiquewhite;
+    justify-content: center;
+}
+.progressBar{
+    width: 100%;
+    position: absolute;
+    bottom: 12vh;
+    display: flex;
+    justify-content: space-between;
+    opacity:0;
+    z-index: -99999;
+}
+.infos{
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.visible{
+    opacity:1;
+    z-index: 99999;
 }
