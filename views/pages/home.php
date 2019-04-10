@@ -7,17 +7,19 @@
         <div class="validate">Valider</div>
     </div>
     <div class="map"></div>
-    <div class="login">
+    <div class="login visible">
         <img class="signupImage" src="assets/images/profilepic.png" alt="profile_placeholder">
-        <p class="welcomeText">Première cuite ?</p>
-         <h1 class="signupButton logs">S'inscrire</h1>
-         <h1 class="loginButton logs">Se connecter</h1>
+        <p class="welcomeText logs visible">Première cuite ?</p>
+         <h1 class="signupButton logs visible">S'inscrire</h1>
+         <h1 class="loginButton logs visible">Se connecter</h1>
              <div class="loginAction logForms">
-                    <h1>login</h1>
+                    <p class="connexionText">Connexion</p>
                      <form  action="#" method="post">
                              <div>
-                                 <textarea class="input" required name="login_pseudo" cols="50" rows="5" placeholder="pseudo"></textarea>
-                                 <textarea class="input" required name="login_password" cols="50" rows="5" placeholder="password"></textarea>
+                                <p class="connexionFormText">Pseudo</p>
+                                 <input class="input" required name="login_pseudo" cols="50" rows="5" placeholder="">
+                                 <p class="connexionFormText">Mot de passe</p>
+                                 <input class="input" required name="login_password" cols="50" rows="5" placeholder="">
                                  <input class="submitter" type="submit">
                              </div>
                      </form>
@@ -25,11 +27,13 @@
              <div class="signupAction logForms">
                     <h1>signup</h1>            
                     <form  action="#" method="post">
-                            <div>
-                                <textarea class="input" required name="signup_pseudo" cols="50" rows="5" placeholder="pseudo"></textarea>
-                                <textarea class="input" required name="signup_password" cols="50" rows="5" placeholder="password"></textarea>
-                                <input class="submitter" type="submit">
-                            </div>
+                    <div>
+                                <p class="connexionFormText">Pseudo</p>
+                                 <input class="input" required name="login_pseudo" cols="50" rows="5" placeholder="">
+                                 <p class="connexionFormText">Mot de passe</p>
+                                 <input class="input" required name="login_password" cols="50" rows="5" placeholder="">
+                                 <input class="submitter" type="submit">
+                             </div>
                     </form>
              </div>
     </div>
@@ -62,7 +66,7 @@
             <p class="history3">herbert poireau</p>
             <p class="history4">Thomas de Saucissonux</p>
         </div>
-        <div class="friendsData datas">
+        <div class="friendListData datas">
             <h1 class="friendsTitle">Friends</h1>
             <p class="friends1">françois cacher</p>
             <p class="friends2">gerard chattus</p>
