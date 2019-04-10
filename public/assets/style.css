@@ -5,17 +5,18 @@ body{
     width: 100vw;
     font-family: 'Open Sans', sans-serif;
 }
-.background{
+.map{
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: -100;
+    z-index: 0;
 }
 .logo{
     position: absolute;
     top: 4vh;
     left: 5vw;
     width: 15vw;
+    z-index: 1;
 }
 
 .loginImage{
@@ -23,7 +24,8 @@ body{
     top: 4vh;
     right: 5vw;
     width: 15vw;
-    border-radius: 100%
+    border-radius: 100%;
+    z-index: 2;
 }
 .loginAction{
     opacity:0;
@@ -32,6 +34,9 @@ body{
     display: flex;
     flex-flow: column;
     align-items: center;
+}
+.connexionText{
+    color:white;
 }
 .signupAction{
     opacity:0;
@@ -44,7 +49,17 @@ body{
 .input{
     width: 60vw;
     height: 4vh;
-    margin-left: 15vw
+    margin-left: 15vw;
+    background: #EDC02C;
+    border-style: none; 
+    border-radius: 5px;
+    padding: 1vh 0;
+    color:white;
+}
+.connexionFormText
+{
+    color: black;
+    margin-left: 15vw;
 }
 .submitter{
     width: 30vw;
@@ -102,7 +117,7 @@ body{
     position: absolute;
     bottom: 0%;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 .searchBar{
     width: 90vw;
@@ -187,14 +202,11 @@ body{
     margin-right: 10vw;
 }
 
-.visible{
-    opacity:1;
-    z-index: 99999;
-}
+
 
 .downBarInfos{
-    /* opacity:0;
-    z-index: -99999; */
+    opacity:0;
+    z-index: -99999;
     position: absolute;
     height: 55vh;
     width: 76vw;
@@ -206,6 +218,8 @@ body{
     left: 11vw;
 }
 .datas{
+    opacity: 0;
+    z-index: 99999;
     position: absolute;
     margin-left: 9vw
 }
@@ -245,4 +259,8 @@ body{
 
 .card .validate{
     bottom: 0;
+}
+.visible{
+    opacity:1;
+    z-index: 99999;
 }
