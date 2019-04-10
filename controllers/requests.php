@@ -1,5 +1,4 @@
 <?php
-    // Request 1
     if(!empty($_GET) and !empty($_GET['address']))
     {
 
@@ -41,7 +40,12 @@
         //     $barsMap = $barsMap.$markerLat.','.$markerLng.'|';
         // }
         $barsMap = 'https://www.google.com/maps/embed/v1/search?key=AIzaSyBk-OSdp7TIS3sVlIQxMC-taE1x_5ZbKjw&center='.$latitude.','.$longitude.'&zoom=14&q=bar';
-
-        
+    }
+    
+    // Geolocalisation
+    elseif (!empty($_GET) and !empty($_GET['geolocalisation'])) 
+    {
+        $latitude = 0;
+        $longitude = 0;
     }
 ?>

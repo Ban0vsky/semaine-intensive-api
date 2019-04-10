@@ -38,10 +38,11 @@
                     </form>
              </div>
     </div>
-        <form class="searchBar" action="#" method="post">
-                <input class="searchInput" required name="address" cols="50" rows="5" placeholder="Soif de quelle rue?"></textarea>
-                <input class="start" type="submit">
-        </form>
+    <form class="searchBar" action="#" method="GET">
+        <input class="searchInput" required name="address" cols="50" rows="5" placeholder="Soif de quelle rue?"></textarea>
+        <input class="start" type="submit">
+        <a href="?geolocalisation=yes">OOO</a>
+    </form>
     <div class="launcher">
         <div class="launch">lessdrinkbois</div>
         <div class="canceller">waitno I have childrens</div>
