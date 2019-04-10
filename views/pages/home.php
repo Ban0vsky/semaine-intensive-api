@@ -33,17 +33,10 @@
                     </form>
              </div>
     </div>
-<<<<<<< HEAD
         <form class="searchBar" action="#" method="post">
-                <input class="searchInput" required name="street_choice" cols="50" rows="5" placeholder="Soif de quelle rue?"></textarea>
+                <input class="searchInput" required name="address" cols="50" rows="5" placeholder="Soif de quelle rue?"></textarea>
                 <input class="start" type="submit">
         </form>
-=======
-    <form class="searchBar" action="#" method="GET">
-        <textarea class="searchInput" required name="address" cols="50" rows="5" placeholder="Soif de quelle rue?"></textarea>
-        <input class="start" type="submit">
-    </form>
->>>>>>> 59d2ba0c4b3126a81d5d09d3d9c94d563b7836e5
     <div class="launcher">
         <div class="launch">lessdrinkbois</div>
         <div class="canceller">waitno I have childrens</div>
