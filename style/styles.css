@@ -1,4 +1,6 @@
 body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
     padding:0;
     margin:0;
     height: 100vh;
@@ -34,6 +36,28 @@ body{
     flex-flow: column;
     align-items: center;
 }
+.signupButton{
+    background:#EDC02C;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 2vw 0;
+    margin: 0;
+}
+.loginButton
+{
+color: black;
+font-size: 0.8em;
+}
+.connexionText{
+    color: black;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+.signupImage{
+    width: 30vw;
+}
 .signupAction{
     opacity:0;
     z-index: -99999;
@@ -50,22 +74,22 @@ body{
     opacity:0;
     z-index: -99999;
     position: absolute;
-    height: 55vh;
     width: 75vw;
-    background-color: black;
+    background-color: white;
     color: antiquewhite;
     display: flex;
     flex-flow: column;
     align-items: center;
     top: 20vh;
     left: 13vw;
+    border-radius: 10px;
 }
 .logForms{
     margin-top: 25vh;
 }
 .downBar{
     width: 100%;
-    background-color: antiquewhite;
+    background-color: white;
     height: 10vh;
     position: absolute;
     bottom: 0%;
@@ -77,22 +101,33 @@ body{
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 12%
+    bottom: 12%;
+    border-radius: 40px;
+    background: white;
+    align-items:center;
 }
 .searchInput{
     width: 90%;
     height: 6vh;
-    border-radius: 40px;
-    font-size: 5vw;
+    font-size: 1em;
+    background: transparent;
     display: flex;
     align-items: center;
-    padding-top: 2vh;
-    padding-left: 20px;
     border: none;
+    color: #EDC02C;
+    margin-left: 5vw;
 }
-
+.searchInput::placeholder
+{
+    color: #EDC02C;
+}
+.geolocImage
+{
+    width: 8vw;
+    margin-right: 3vw;
+}
 .downIcon{
-    width: 10vw;
+    width: 8vw;
     margin-left: 10vw;
     margin-right: 10vw;
 }
@@ -100,6 +135,7 @@ body{
 .logs{
     opacity:0;
     z-index: -99999;
+    font-weight: 300;
 }
 
 .launcher{
