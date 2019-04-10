@@ -1,0 +1,147 @@
+body{
+    padding:0;
+    margin:0;
+    height: 100vh;
+    width: 100vw;
+}
+.background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -100;
+}
+.logo{
+    position: absolute;
+    top: 4%;
+    left: 4%;
+}
+.logoSvg{
+    width: 24vw;
+}
+
+.loginImage{
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    width: 15vw;
+    border-radius: 100%
+}
+.loginAction{
+    opacity:0;
+    z-index: -99999;
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.signupAction{
+    opacity:0;
+    z-index: -99999;
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.input{
+    width: 45vw;
+    height: 5vh;
+}
+.login{
+    opacity:0;
+    z-index: -99999;
+    position: absolute;
+    height: 55vh;
+    width: 75vw;
+    background-color: black;
+    color: antiquewhite;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    top: 20vh;
+    left: 13vw;
+}
+.logForms{
+    margin-top: 25vh;
+}
+.downBar{
+    width: 100%;
+    background-color: antiquewhite;
+    height: 10vh;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    justify-content: space-between
+}
+.searchBar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 12%
+}
+.searchInput{
+    width: 90%;
+    height: 6vh;
+    border-radius: 40px;
+    font-size: 5vw;
+    display: flex;
+    align-items: center;
+    padding-top: 2vh;
+    padding-left: 20px;
+    border: none;
+}
+
+.downIcon{
+    width: 10vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.logs{
+    opacity:0;
+    z-index: -99999;
+}
+
+.launcher{
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 68vh;
+    opacity:0;
+    z-index: -99999;
+}
+.launch{
+    height: 5vh;
+    font-size: 8vw;
+
+    background-color: antiquewhite;
+    justify-content: center;
+}
+.canceller{
+    height: 5vh;
+    font-size: 8vw;    
+
+    background-color: antiquewhite;
+    justify-content: center;
+}
+.progressBar{
+    width: 100%;
+    position: absolute;
+    bottom: 12vh;
+    display: flex;
+    justify-content: space-between;
+    opacity:0;
+    z-index: -99999;
+}
+.infos{
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.visible{
+    opacity:1;
+    z-index: 99999;
+}
