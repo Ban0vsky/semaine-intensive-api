@@ -9,6 +9,7 @@
     <div class="map"></div>
     <div class="login visible">
         <img class="signupImage" src="assets/images/profilepic.png" alt="profile_placeholder">
+        <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">
         <p class="welcomeText logs visible">Première cuite ?</p>
          <h1 class="signupButton logs visible">S'inscrire</h1>
          <h1 class="loginButton logs visible">Se connecter</h1>
@@ -25,7 +26,7 @@
                      </form>
              </div>
              <div class="signupAction logForms">
-                    <h1>signup</h1>            
+                    <p class="connexionText">Inscription</p>            
                     <form  action="#" method="post">
                     <div>
                                 <p class="connexionFormText">Pseudo</p>
@@ -51,22 +52,23 @@
         <div class="score infos">999</div>
     </div>
     <div class="downBarInfos">
+    <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">
         <div class="leaderboardData datas">
-            <h1 class="leaderTitle">History</h1>
+            <h1 class="leaderTitle">Top 5</h1>
             <p class="leader1">françois cacher</p>
             <p class="leader2">gerard chattus</p>
             <p class="leader3">herbert poireau</p>
             <p class="leader4">Thomas de Saucissonux</p>
         </div>
         <div class="historyData datas">
-            <h1 class="historyTitle">Friends</h1>
+            <h1 class="historyTitle">Palmarès</h1>
             <p class="history1">françois cacher</p>
             <p class="history2">gerard chattus</p>
             <p class="history3">herbert poireau</p>
             <p class="history4">Thomas de Saucissonux</p>
         </div>
         <div class="friendListData datas">
-            <h1 class="friendsTitle">Friends</h1>
+            <h1 class="friendsTitle">Mes amis</h1>
             <p class="friends1">françois cacher</p>
             <p class="friends2">gerard chattus</p>
             <p class="friends3">herbert poireau</p>

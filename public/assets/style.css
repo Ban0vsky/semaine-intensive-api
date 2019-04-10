@@ -36,7 +36,11 @@ body{
     align-items: center;
 }
 .connexionText{
-    color:white;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-top: 4vh;
+    margin-bottom: 0vh;
 }
 .signupAction{
     opacity:0;
@@ -63,8 +67,14 @@ body{
 }
 .submitter{
     width: 30vw;
-    height: 4vh;
-    margin-left: 30vw
+    margin-left: 30vw;
+    padding: 1.5vh 2vw;
+    background: #EDC02C;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 3vh;
+    font-size: 1em;
 }
 .login{
     opacity:0;
@@ -84,6 +94,12 @@ body{
     color: black;
     font-size: 1.5em;
     font-weight: 400;
+}
+.closeButton{
+    width: 8vw;
+    position: absolute;
+    right: 4vw;
+    top: 4vw;
 }
 .signupImage
 {
@@ -205,25 +221,30 @@ body{
 
 
 .downBarInfos{
-    opacity:0;
+    opacity: 0;
     z-index: -99999;
     position: absolute;
     height: 55vh;
     width: 76vw;
-    background-color: black;
-    color: antiquewhite;
+    background-color: white;
     display: flex;
     flex-flow: column;
     top: 20vh;
     left: 11vw;
+    border-radius: 5px;
+    color: #EDC02C;
+    align-items: center;
 }
 .datas{
     opacity: 0;
-    z-index: 99999;
     position: absolute;
-    margin-left: 9vw
+    margin-top: 4vh;
 }
-
+.friendsTitle, .historyTitle, .leaderTitle
+{
+    text-align: center;
+    font-size: 2.2em;
+}
 .map {
     width: 100vw;
     height: 94vh;
