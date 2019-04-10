@@ -210,3 +210,39 @@ body{
     margin-left: 9vw
 }
 
+.map {
+    width: 100vw;
+    height: 94vh;
+}
+
+.card{
+    width: 40vw;
+    height: 15vh;
+    position: fixed;
+    top: 25%;
+    left: 30vw;
+    z-index: 1;
+    background: white;
+    border-radius: 10%;
+    box-shadow: 10px 10px 50px #00000055;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.card .name{
+    color: goldenrod;
+}
+
+.card .address{
+    font-size: 10px;
+}
+
+.card .validate{
+    bottom: 0;
+}

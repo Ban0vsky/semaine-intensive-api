@@ -1,6 +1,12 @@
 <?php include '../views/partials/header.php';?>
+<?php include '../controllers/requests.php';?>
 
-    <img class="background" src="assets/images/background.jpg" alt="map_placeholder">
+    <div class="card">
+        <div class="name">NAME</div>
+        <div class="address">ADDRESS</div>
+        <div class="validate">Valider</div>
+    </div>
+    <div class="map"></div>
     <div class="login">
         <img class="signupImage" src="assets/images/profilepic.png" alt="profile_placeholder">
         <p class="welcomeText">Première cuite ?</p>
@@ -27,10 +33,17 @@
                     </form>
              </div>
     </div>
+<<<<<<< HEAD
         <form class="searchBar" action="#" method="post">
                 <input class="searchInput" required name="street_choice" cols="50" rows="5" placeholder="Soif de quelle rue?"></textarea>
                 <input class="start" type="submit">
         </form>
+=======
+    <form class="searchBar" action="#" method="GET">
+        <textarea class="searchInput" required name="address" cols="50" rows="5" placeholder="Soif de quelle rue?"></textarea>
+        <input class="start" type="submit">
+    </form>
+>>>>>>> 59d2ba0c4b3126a81d5d09d3d9c94d563b7836e5
     <div class="launcher">
         <div class="launch">lessdrinkbois</div>
         <div class="canceller">waitno I have childrens</div>
@@ -63,4 +76,12 @@
             <p class="friends4">Thomas de Saucissonux</p>
         </div>
     </div>
+
+    <!-- PHP to JS variables transfert -->
+    <input type="hidden" value="<?=$latitude?>" class="transfert_latitude">
+    <input type="hidden" value="<?=$longitude?>" class="transfert_longitude">
+    
+    <script src="../public/assets/map.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk-OSdp7TIS3sVlIQxMC-taE1x_5ZbKjw&callback=initMap&libraries=places,visualization"></script>
+
 <?php include '../views/partials/footer.php' ?>
