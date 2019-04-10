@@ -12,17 +12,15 @@ body{
 }
 .logo{
     position: absolute;
-    top: 4%;
-    left: 4%;
-}
-.logoSvg{
-    width: 24vw;
+    top: 4vh;
+    left: 5vw;
+    width: 15vw;
 }
 
 .loginImage{
     position: absolute;
-    top: 4%;
-    right: 4%;
+    top: 4vh;
+    right: 5vw;
     width: 15vw;
     border-radius: 100%
 }
@@ -43,22 +41,28 @@ body{
     align-items: center;
 }
 .input{
-    width: 45vw;
-    height: 5vh;
+    width: 60vw;
+    height: 4vh;
+    margin-left: 15vw
+}
+.submitter{
+    width: 30vw;
+    height: 4vh;
+    margin-left: 30vw
 }
 .login{
     opacity:0;
     z-index: -99999;
     position: absolute;
     height: 55vh;
-    width: 75vw;
+    width: 90vw;
     background-color: black;
     color: antiquewhite;
     display: flex;
     flex-flow: column;
     align-items: center;
-    top: 20vh;
-    left: 13vw;
+    top: 9vh;
+    left: 5vw;
 }
 .logForms{
     margin-top: 25vh;
@@ -77,11 +81,11 @@ body{
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 12%
+    bottom: 13vh
 }
 .searchInput{
-    width: 90%;
-    height: 6vh;
+    width: 90vw;
+    height: 7vh;
     border-radius: 40px;
     font-size: 5vw;
     display: flex;
@@ -90,11 +94,18 @@ body{
     padding-left: 20px;
     border: none;
 }
+.start{
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    right: 10vw;
+}
+
 
 .downIcon{
-    width: 10vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    width: 7vw;
+    margin-left: 12vw;
+    margin-right: 12vw
 }
 
 .logs{
@@ -114,16 +125,16 @@ body{
     z-index: -99999;
 }
 .launch{
-    height: 5vh;
+    height: 6vh;
     font-size: 8vw;
-
+    width: 90 vw;
     background-color: antiquewhite;
     justify-content: center;
 }
 .canceller{
     height: 5vh;
     font-size: 8vw;    
-
+    width: 90 vw;
     background-color: antiquewhite;
     justify-content: center;
 }
@@ -145,3 +156,22 @@ body{
     opacity:1;
     z-index: 99999;
 }
+
+.downBarInfos{
+    /* opacity:0;
+    z-index: -99999; */
+    position: absolute;
+    height: 55vh;
+    width: 76vw;
+    background-color: black;
+    color: antiquewhite;
+    display: flex;
+    flex-flow: column;
+    top: 20vh;
+    left: 11vw;
+}
+.datas{
+    position: absolute;
+    margin-left: 9vw
+}
+

@@ -8,7 +8,5 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <div class="logo">
-        <h1>zdabarda</h1>
-    </div>
+    <img class="logo" src="assets/images/logo.png" alt="">
     <img class="loginImage" src="assets/images/drunk.png" alt="">

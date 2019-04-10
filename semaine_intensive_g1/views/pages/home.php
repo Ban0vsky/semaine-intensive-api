@@ -10,7 +10,7 @@
                              <div>
                                  <textarea class="input" required name="login_pseudo" cols="50" rows="5" placeholder="pseudo"></textarea>
                                  <textarea class="input" required name="login_password" cols="50" rows="5" placeholder="password"></textarea>
-                                 <input type="submit">
+                                 <input class="submitter" type="submit">
                              </div>
                      </form>
              </div>
@@ -20,13 +20,12 @@
                             <div>
                                 <textarea class="input" required name="signup_pseudo" cols="50" rows="5" placeholder="pseudo"></textarea>
                                 <textarea class="input" required name="signup_password" cols="50" rows="5" placeholder="password"></textarea>
-                                <input type="submit">
+                                <input class="submitter" type="submit">
                             </div>
                     </form>
              </div>
     </div>
         <form class="searchBar" action="#" method="post">
-                
                 <textarea class="searchInput" required name="street_choice" cols="50" rows="5" placeholder="Soif de quelle rue?"></textarea>
                 <input class="start" type="submit">
         </form>
@@ -38,5 +37,28 @@
         <div class="cancel infos">cancel</div>
         <div class="timer infos">00.00</div>
         <div class="score infos">999</div>
+    </div>
+    <div class="downBarInfos">
+        <div class="leaderboardData datas">
+            <h1 class="leaderTitle">History</h1>
+            <p class="leader1">françois cacher</p>
+            <p class="leader2">gerard chattus</p>
+            <p class="leader3">herbert poireau</p>
+            <p class="leader4">Thomas de Saucissonux</p>
+        </div>
+        <div class="historyData datas">
+            <h1 class="historyTitle">Friends</h1>
+            <p class="history1">françois cacher</p>
+            <p class="history2">gerard chattus</p>
+            <p class="history3">herbert poireau</p>
+            <p class="history4">Thomas de Saucissonux</p>
+        </div>
+        <div class="friendsData datas">
+            <h1 class="friendsTitle">Friends</h1>
+            <p class="friends1">françois cacher</p>
+            <p class="friends2">gerard chattus</p>
+            <p class="friends3">herbert poireau</p>
+            <p class="friends4">Thomas de Saucissonux</p>
+        </div>
     </div>
 <?php include '../views/partials/footer.php' ?>
