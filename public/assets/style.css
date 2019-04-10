@@ -4,6 +4,7 @@ body{
     height: 100vh;
     width: 100vw;
     font-family: 'Open Sans', sans-serif;
+    z-index: 0;
 }
 .map{
     width: 100%;
@@ -227,7 +228,6 @@ body{
 .map {
     width: 100vw;
     height: 94vh;
-    z-index: -10;
 }
 
 .card{
