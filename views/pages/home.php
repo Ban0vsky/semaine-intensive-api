@@ -38,7 +38,7 @@
              </div>
     </div>
         <form class="searchBar" action="#" method="post">
-                <input class="searchInput" required name="street_choice" cols="50" rows="5" placeholder="Soif de quelle rue?"></textarea>
+                <input class="searchInput" required name="address" cols="50" rows="5" placeholder="Soif de quelle rue?"></textarea>
                 <input class="start" type="submit">
         </form>
     <div class="launcher">
