@@ -21,6 +21,8 @@ if (latitude==0 && longitude==0)
     function showPosition(position) {
     latitude = position.coords.latitude
     longitude = position.coords.longitude
+    window.alert(latitude)
+    window.alert(longitude)
     }
 }
 
