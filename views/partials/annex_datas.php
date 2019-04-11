@@ -2,13 +2,15 @@
     <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">
     <img class="signupImage" src="assets/images/profilepic.png" alt="profile_placeholder">
     <div class="profileData">
-        <p class="profileName">BeerMasterDuMarais</p>
+        <p class="profileName"> <?=$_SESSION['user'] ?></p>
         <div class="profileScore">
             <span>12</span>
             <img class="birzProfile" src="assets/images/beer.svg" alt="profile_placeholder">
             <span>(6ème)</span>
         </div>
-        <p class="disconnectButton">Me déconnecter</p>
+        <form method="post" action="index.php">
+            <button class="disconnectButton" type="submit" name="logout">Se deconnecter</button>
+        </form >
         <p class="deleteAccountButton">Supprimer mon compte</p>
     </div>
 </div>
