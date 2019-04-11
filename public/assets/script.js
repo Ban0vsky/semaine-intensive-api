@@ -48,14 +48,29 @@ setTimeout(function() {
     }, 600);
 }, 4000);
 
+<<<<<<< HEAD
 
 lottie.loadAnimation({
     container: lottieAnimation,
+=======
+if(document.querySelector('.noMoreAnimation'))
+{
+  lottie.loadAnimation(
+  {
+    container: lottieAnimation, 
+>>>>>>> f9f59ba208708724c8beada0c3da03933f712527
     renderer: 'svg',
     loop: false,
     autoplay: true,
     path: './assets/beer.json'
+<<<<<<< HEAD
 });
+=======
+  });
+}
+
+
+>>>>>>> f9f59ba208708724c8beada0c3da03933f712527
 
 
 

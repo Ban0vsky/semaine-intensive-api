@@ -15,14 +15,6 @@ let closeButton = document.querySelectorAll('.closeButton')
 let lottieAnimation = document.querySelector('.lottieAnimation')
 
 
-lottie.loadAnimation({
-  container: lottieAnimation, // the dom element that will contain the animation
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  path: 'https://www.grossyoan.fr/beer.json'});
-
-
 loginImage.addEventListener('click', () =>
 {
     let visible = document.querySelectorAll('.visible')
