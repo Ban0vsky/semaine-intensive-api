@@ -174,15 +174,22 @@
    </div>
 </div>
 <div class="killAccount">
-        <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">                
+<img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">                
          <div class="killAccountData datas">
-            <h1 class="historyTitle">Palmarès</h1>
-            <p class="history1">françois cacher</p>
-            <p class="history2">gerard chattus</p>
-            <p class="history3">herbert poireau</p>
-            <p class="history4">Thomas de Saucissonux</p>
+         <div class="quitImg">
+
+         <img class="signupImage" src="assets/images/sadGuy.png" alt="profile_placeholder">
+         </div>
+
+            <p class="quitText">Vous nous quittez déjà ? 
+Le petit va attraper froid...</p>
+            <p class="quitValidation">Laissez-moi tranquille, j’ai raccroché !</p>
          </div>
       </div>
+<<<<<<< HEAD
+
+=======
+>>>>>>> befd9488555df758feea10a4d84d0a07878707b7
    <div class="friendRequestData datas">
        <h1>Mes invitations</h1>
        <?php
