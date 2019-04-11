@@ -36,6 +36,7 @@
    <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">
    <div class="leaderboardData datas">
       <h1 class="leaderTitle">Top 5</h1>
+      <div class="leaderList">
       <?php foreach ($score_data as $data): ?>
       <div class="leader">
          <img class="friendImage" src="assets/images/profilepic.png" alt="profile_placeholder">
@@ -48,6 +49,7 @@
          </div>
       </div>
       <?php endforeach;?>
+      </div>
    </div>
    <div class="historyData datas">
       <h1 class="historyTitle">Palmarès</h1>
