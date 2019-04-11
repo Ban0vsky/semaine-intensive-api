@@ -9,7 +9,7 @@
             <span>(6ème)</span>
         </div>
         <form method="post" action="index.php">
-            <button class="disconnectButton" type="submit" name="logout">Se deconnecter</button>
+            <button class="disconnectButton" type="submit" name="logout">Me déconnecter</button>
         </form >
         <p class="deleteAccountButton">Supprimer mon compte</p>
     </div>
@@ -18,10 +18,11 @@
     <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">
         <div class="leaderboardData datas">
             <h1 class="leaderTitle">Top 5</h1>
-            <p class="leader1">françois cacher</p>
-            <p class="leader2">gerard chattus</p>
-            <p class="leader3">herbert poireau</p>
-            <p class="leader4">Thomas de Saucissonux</p>
+            <p class="leader1">Nom n°1</p>
+            <p class="leader2">Nom n°2</p>
+            <p class="leader3">Nom n°3</p>
+            <p class="leader4">Nom n°4</p>
+            <p class="leader5">Nom n°5</p>
         </div>
         <div class="historyData datas">
             <h1 class="historyTitle">Palmarès</h1>
