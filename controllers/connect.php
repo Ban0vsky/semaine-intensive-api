@@ -47,8 +47,6 @@
 			
 
 			$_SESSION['user'] = $username;
-			$_SESSION['success'] = "You are now logged in";
-			echo ($_SESSION['success']." as ".$_SESSION['user']);
 			
 		}
 
@@ -83,12 +81,17 @@
 
 			if ($data) {
 				$_SESSION['user'] = $username;
-				$_SESSION['success'] = "You are now logged in";
-				echo ($_SESSION['success']." as ".$_SESSION['user']);
 			}else {
 				array_push($errors, "Wrong username/password combination");
 			}
 		}
+	}
+
+	// Log out
+	if (isset($_POST['logout'])) 
+	{
+		session_destroy();
+		unset($_SESSION['username']);
 	}
 
 ?>

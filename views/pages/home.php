@@ -1,6 +1,13 @@
-<?php include '../views/partials/header.php';?>
-<?php include '../controllers/requests.php';?>
-<?php include '../controllers/connect.php';?>
+<?php
+include '../views/partials/header.php';
+include '../controllers/requests.php';
+include '../controllers/connect.php';
+include '../controllers/errors.php'; 
+if (isset($_SESSION['user'])) {
+    $_SESSION['success'] = "You are now logged in";
+    echo ($_SESSION['success']." as ".$_SESSION['user']);
+}
+?>
 
     <div class="lottieAnimation"></div>
     <div class="card">
@@ -19,17 +26,22 @@
                      <form  action="#" method="post">
                              <div>
                                 <p class="connexionFormText">Pseudo</p>
-                                 <input class="input" required name="login_pseudo" placeholder="">
+                                 <input class="input" type="text" name="username" placeholder="">
                                  <p class="connexionFormText">Mot de passe</p>
-                                 <input class="input" required name="login_password" placeholder="">
-                                 <input class="submitter" type="submit">
+                                 <input class="input" type="password" name="password" placeholder="">
+                                 <input class="submitter" type="submit" name="login_user">
                              </div>
                      </form>
+
+                     <form method="post" action="#">
+                        <button type="submit" name="logout">Se deconnecter</button>
+                    </form >
+
              </div>
              <div class="signupAction logForms">
                     <p class="connexionText">Inscription</p>            
                     <form  action="#" method="post">
-                    <?php include('../controllers/errors.php'); ?>
+                    
                     <div>
                                 <p class="connexionFormText">Pseudo</p>
                                  <input type="text" class="input" name="username" placeholder="">
@@ -40,10 +52,10 @@
                                  <input class="submitter" type="submit" name="reg_user">
                              </div>
                     </form>
-
-
              </div>
     </div>
+
+
     <div class="searchBottomPanel">
         <div class="formBlock">
             <form class="searchBar" action="#" method="GET">
