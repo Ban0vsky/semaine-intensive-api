@@ -4,11 +4,12 @@ include '../views/partials/header.php';
 include '../controllers/requests.php';
 include '../controllers/errors.php'; 
 ?>
-
-    <div class="lottieAnimation"></div>
+     <div class="lottieAnimation">
+        <div class="lottieJson"></div>
+    </div>
     <div class="card">
-        <div class="name">NAME</div>
-        <div class="address">ADDRESS</div>
+        <div class="name">Nom</div>
+        <div class="address">Adresse</div>
         <div class="validate">Valider</div>
     </div>
     <div class="map"></div>

@@ -11,12 +11,22 @@ const friendListData = document.querySelector('.friendListData')
 const downBarInfos = document.querySelector('.downBarInfos')
 const launch = document.querySelector('.launch')
 const progressBar = document.querySelector('.progressBar')
+const currentAdress = document.querySelector('.currentAdress')
 let closeButton = document.querySelectorAll('.closeButton')
 const profilePage = document.querySelector('.profilePage')
 const profileData = document.querySelector('.profileData')
 const endScreen = document.querySelector('.endScreen')
 const stopButton = document.querySelector('.stopButton')
+const endScreenData = document.querySelector('.endScreenData')
+const killAccount = document.querySelector('.killAccount')
+const killAccountData = document.querySelector('.killAccountData')
+const deleteAccountButton = document.querySelector('.deleteAccountButton')
 
+deleteAccountButton.addEventListener('click', () =>
+{
+  killAccount.classList.add('visible')
+  killAccountData.classList.add('visible')
+})
 
 loginImage.addEventListener('click', () =>
 {
@@ -39,6 +49,7 @@ for (var i = 0; i < visible.length; i++) {
   }
   progressBar.classList.remove('visibleImportant')
   endScreen.classList.add('visible')
+  endScreenData.classList.add('visible')
 })
 
 history.addEventListener('click', () =>
@@ -100,4 +111,5 @@ for (var i = 0; i < visibleImportant.length; i++) {
     console.log("yes")
   }
 progressBar.classList.add('visibleImportant')
+currentAdress.classList.add('visibleImportant')
 })

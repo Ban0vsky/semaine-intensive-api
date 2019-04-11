@@ -10,10 +10,19 @@ const leaderboardData = document.querySelector('.leaderboardData')
 const friendListData = document.querySelector('.friendListData')
 const downBarInfos = document.querySelector('.downBarInfos')
 let closeButton = document.querySelectorAll('.closeButton')
-// let lottieAnimation = document.querySelector('.lottieAnimation')
+let lottieAnimation = document.querySelector('.lottieJson')
+let lottieContainer = document.querySelector('.lottieAnimation')
 const profilePage = document.querySelector('.profilePage')
 const profileData = document.querySelector('.profileData')
+const killAccount = document.querySelector('.killAccount')
+const killAccountData = document.querySelector('.killAccountData')
+const deleteAccountButton = document.querySelector('.deleteAccountButton')
 
+deleteAccountButton.addEventListener('click', () =>
+{
+  killAccount.classList.add('visible')
+  killAccountData.classList.add('visible')
+})
 
 loginImage.addEventListener('click', () =>
 {
@@ -26,12 +35,20 @@ for (var i = 0; i < visible.length; i++) {
   profileData.classList.add('visible')
 })
 
-// lottie.loadAnimation({
-//   container: lottieAnimation, // the dom element that will contain the animation
-//   renderer: 'svg',
-//   loop: true,
-//   autoplay: true,
-//   path: 'https://www.grossyoan.fr/beer.json'});
+setTimeout(function() {
+  lottieContainer.style.opacity="0"
+  setTimeout(function() {
+    lottieContainer.style.display="none"
+  }, 600);
+}, 4000);
+
+
+lottie.loadAnimation({
+   container: lottieAnimation, 
+   renderer: 'svg',
+   loop: false,
+  autoplay: true,
+path: './assets/beer.json'});
 
 
 

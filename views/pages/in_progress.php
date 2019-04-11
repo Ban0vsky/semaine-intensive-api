@@ -12,21 +12,25 @@
         <div class="launch">
             <p>Lancer le barathon</p>    
         </div>
-        <div class="canceller">
-            <p>Annuler</p>    
-        </div>    </div>
+        <a href="../public/">
+            <div class="canceller">
+                <p>Annuler</p>    
+            </div>
+        </a>    
+    </div>
+    <div class="currentAdress">Rue Mouffetard</div>
     <div class="progressBar">
         <div class="progressBarInside">
             <img class="stopButton" src="assets/images/stopButton.png" alt="profile_placeholder">
             <div class="timer infos">00:00:00</div>
             <div class="score infos">
-                <span>12</span>
+                <span class="ongoingBirzNumber">12</span>
                 <img class="birzProgress" src="assets/images/beer.svg" alt="profile_placeholder">
             </div>
         </div>
     </div>
     <div class="endScreen">
-    <img class="finalCloseButton" src="assets/images/cancel.svg" alt="profile_placeholder">
+    <a href="../public/"><img class="finalCloseButton" src="assets/images/cancel.svg" alt="profile_placeholder"></a>
         <div class="endScreenData datas">
             <h1 class="leaderTitle">Top 5</h1>
             <p class="leader1">françois cacher</p>

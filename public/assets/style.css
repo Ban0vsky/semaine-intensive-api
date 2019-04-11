@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+}
+  
 body{
     padding:0;
     margin:0;
@@ -5,11 +9,9 @@ body{
     width: 100vw;
     font-family: 'Open Sans', sans-serif;
     z-index: 0;
-    overflow: hidden;
+    position: relative;
 }
 .lottieAnimation{
-    max-width: 100%;
-    max-height: 100%;
     background-color: #1E1C26;
     position: absolute;
     top: 0;
@@ -18,7 +20,14 @@ body{
     bottom: 0;
     margin: auto;
     z-index: 5000000000;
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.6s ease-in-out;
+}
+.lottieJson{
+    width:50%;
 }
 .map{
     width: 100%;
@@ -50,6 +59,11 @@ body{
     flex-flow: column;
     align-items: center;
 }
+.loginAction form{
+    background: white;
+    border-radius: 5px;
+    padding-bottom: 3vh;
+}
 .connexionText{
     color: black;
     font-size: 1.5em;
@@ -65,6 +79,11 @@ body{
     flex-flow: column;
     align-items: center;
 }
+.signupAction form{
+    background: white;
+    border-radius: 5px;
+    padding-bottom: 3vh;
+}
 .input{
     width: 60vw;
     height: 4vh;
@@ -79,6 +98,7 @@ body{
 {
     color: black;
     margin-left: 15vw;
+    margin-bottom:0;
 }
 .submitter{
     width: 30vw;
@@ -146,7 +166,7 @@ body{
     margin-bottom: 2vh;
 }
 .logForms{
-    margin-top: 25vh;
+    margin-top: 15vh;
 }
 .downBar{
     width: 100%;
@@ -229,7 +249,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 75vh;
+    bottom: 10vh;
     opacity:0;
     z-index: -99999;
 }
@@ -264,6 +284,23 @@ body{
 {
     margin: 0;
 }
+.currentAdress{
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    bottom: 20vh;
+    opacity: 0;
+    z-index: -99999;
+    background: #EDC02C;
+    color: white;
+    padding: 10px;
+    left: 10vw;
+    border-radius: 5px 5px 0px 0px;
+
+}
 .progressBar{
     width: 100%;
     height: 10vh;
@@ -281,6 +318,9 @@ body{
     align-items: flex-end;
     display: flex;
     width:15vw;
+}
+.ongoingBirzNumber{
+    margin-right: 1vw;
 }
 .progressBar .p
 {
@@ -422,6 +462,21 @@ body{
     color: #EDC02C;
     align-items: center;
 }
+.killAccount{
+    opacity: 0;
+    z-index: -99999;
+    position: absolute;
+    height: 55vh;
+    width: 76vw;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    top: 20vh;
+    left: 11vw;
+    border-radius: 5px;
+    color: #EDC02C;
+    align-items: center;
+}
 .datas{
     opacity: 0;
     margin-top: 4vh;
@@ -438,43 +493,53 @@ body{
 }
 
 .card{
-    width: 40vw;
-    height: 15vh;
+    height: 10vh;
     position: fixed;
     top: 25%;
     left: 30vw;
     z-index: 1;
     background: white;
-    border-radius: 10%;
+    border-radius: 5px;    
     box-shadow: 10px 10px 50px #00000055;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.2s ease;
+    padding: 0 5vw;
 }
 
 .card .name{
-    color: goldenrod;
+    color: #EDC02C;
+    font-size: 0.8em;
 }
 
 .card .address{
-    font-size: 10px;
+    font-size: 0.6em;
+    margin-bottom: 1vh;
 }
 
 .card .validate{
     bottom: 0;
+    background: #EDC02C;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0 5vw;
 }
 .visible{
     opacity:1;
     z-index: 99999;
 }
 
-
 .visibleImportant{
     opacity:1;
     z-index: 99999;
+}
+
+a{
+    text-decoration: none;
 }
