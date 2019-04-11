@@ -93,6 +93,20 @@
 		unset($_SESSION['logout']);
 	}
 
+	// Delete Account
+	if (isset($_POST['deleteAccount'])) 
+	{	
+		$userToDelete = $_SESSION['user'];
+		$query = $db->prepare("DELETE FROM users WHERE username = :username");
+		$data = $query->execute(
+			[
+				"username" =>	$userToDelete
+			]
+		);
+		unset($_SESSION['user']);
+		unset($_POST['deleteAccount']);
+	}
+
 	// Save Score
 	if (isset($_GET['xfpp']))
 	{

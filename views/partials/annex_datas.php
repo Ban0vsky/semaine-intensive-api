@@ -185,19 +185,20 @@
    </div>
 </div>
 <div class="killAccount">
-<img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">                
-         <div class="killAccountData datas">
-         <div class="quitImg">
-
-         <img class="signupImage" src="assets/images/sadGuy.png" alt="profile_placeholder">
-         </div>
-
-            <p class="quitText">Vous nous quittez déjà ? 
-Le petit va attraper froid...</p>
-            <p class="quitValidation">Laissez-moi tranquille, j’ai raccroché !</p>
-         </div>
-      </div>
-   <div class="friendRequestData datas">
+    <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">                
+    <div class="killAccountData datas">
+    <div class="quitImg">
+    <img class="signupImage" src="assets/images/sadGuy.png" alt="profile_placeholder">
+    </div>
+        <p class="quitText">Vous nous quittez déjà ? 
+             Le petit va attraper froid...
+        </p>
+        <form method="post" action="index.php">
+            <button class="quitValidation" type="submit" name="deleteAccount">Laissez-moi tranquille, j’ai raccroché !</button>
+        </form >
+    </div>
+</div>
+<div class="friendRequestData datas">
        <h1>Mes invitations</h1>
        <?php
             for ($i=0; $i < sizeof($friends_data); $i++)
