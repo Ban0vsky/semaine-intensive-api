@@ -1,4 +1,3 @@
-console.log("WE GOOD BROTHER")
 const loginImage = document.querySelector('.loginImage')
 const signupButton = document.querySelector('.signupButton')
 const loginButton = document.querySelector('.loginButton')
@@ -16,63 +15,59 @@ let lottieAnimation = document.querySelector('.lottieAnimation')
 
 
 lottie.loadAnimation({
-  container: lottieAnimation, // the dom element that will contain the animation
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  path: 'https://www.grossyoan.fr/beer.json'});
+    container: lottieAnimation, // the dom element that will contain the animation
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'https://www.grossyoan.fr/beer.json'
+});
 
 
-loginImage.addEventListener('click', () =>
-{
+loginImage.addEventListener('click', () => {
     let visible = document.querySelectorAll('.visible')
     for (var i = 0; i < visible.length; i++) {
         visible[i].classList.remove('visible')
         console.log("yes")
-      }
-login.classList.add('visible')
-signupButton.classList.add('visible')
-loginButton.classList.add('visible')
-welcomeText.classList.add('visible')
+    }
+    login.classList.add('visible')
+    signupButton.classList.add('visible')
+    loginButton.classList.add('visible')
+    welcomeText.classList.add('visible')
 })
 
 
 
-loginButton.addEventListener('click', () =>
-{
-let visible = document.querySelectorAll('.visible')
-for (var i = 0; i < visible.length; i++) {
-    visible[i].classList.remove('visible')
-    console.log("yes")
-  }
-login.classList.add('visible')
-loginAction.classList.add('visible')
+loginButton.addEventListener('click', () => {
+    let visible = document.querySelectorAll('.visible')
+    for (var i = 0; i < visible.length; i++) {
+        visible[i].classList.remove('visible')
+        console.log("yes")
+    }
+    login.classList.add('visible')
+    loginAction.classList.add('visible')
 })
 
 
 
 
-signupButton.addEventListener('click', () =>
-{
-let visible = document.querySelectorAll('.visible')
-for (var i = 0; i < visible.length; i++) {
-    visible[i].classList.remove('visible')
-    console.log("yes")
-  }
-login.classList.add('visible')
-signupAction.classList.add('visible')
+signupButton.addEventListener('click', () => {
+    let visible = document.querySelectorAll('.visible')
+    for (var i = 0; i < visible.length; i++) {
+        visible[i].classList.remove('visible')
+        console.log("yes")
+    }
+    login.classList.add('visible')
+    signupAction.classList.add('visible')
 })
 
 
 
 for (var j = 0; j < closeButton.length; j++) {
-closeButton[j].addEventListener('click', () =>
-{
-    let visible = document.querySelectorAll('.visible')
-    for (var i = 0; i < visible.length; i++) {
-        visible[i].classList.remove('visible')
-        console.log("yes")
-      }
-})
+    closeButton[j].addEventListener('click', () => {
+        let visible = document.querySelectorAll('.visible')
+        for (var i = 0; i < visible.length; i++) {
+            visible[i].classList.remove('visible')
+            console.log("yes")
+        }
+    })
 }
-
