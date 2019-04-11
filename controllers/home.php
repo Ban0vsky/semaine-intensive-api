@@ -8,5 +8,5 @@ if (isset($_GET['geolocalisation']) or isset($_GET['address']))
 else 
 {
 
-    include '../views/pages/home.php';
+    include '../views/pages/login.php';
 }
