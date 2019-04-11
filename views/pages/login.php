@@ -3,7 +3,6 @@ include '../views/partials/header.php';
 include '../controllers/requests.php';
 include '../controllers/connect.php';
 include '../controllers/errors.php'; 
-
 ?>
 
     <div class="lottieAnimation"></div>
