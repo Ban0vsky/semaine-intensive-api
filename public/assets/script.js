@@ -14,7 +14,15 @@ let lottieAnimation = document.querySelector('.lottieJson')
 let lottieContainer = document.querySelector('.lottieAnimation')
 const profilePage = document.querySelector('.profilePage')
 const profileData = document.querySelector('.profileData')
+const killAccount = document.querySelector('.killAccount')
+const killAccountData = document.querySelector('.killAccountData')
+const deleteAccountButton = document.querySelector('.deleteAccountButton')
 
+deleteAccountButton.addEventListener('click', () =>
+{
+  killAccount.classList.add('visible')
+  killAccountData.classList.add('visible')
+})
 
 loginImage.addEventListener('click', () =>
 {
