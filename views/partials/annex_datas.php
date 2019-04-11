@@ -6,6 +6,9 @@
             <p class="leader2">gerard chattus</p>
             <p class="leader3">herbert poireau</p>
             <p class="leader4">Thomas de Saucissonux</p>
+            <form method="post" action="#">
+                <button type="submit" name="logout">Se deconnecter</button>
+            </form >
         </div>
         </div>
 <div class="downBarInfos">
