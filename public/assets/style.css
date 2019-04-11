@@ -639,3 +639,24 @@ body{
 a{
     text-decoration: none;
 }
+
+.recapInfos{
+    margin: 5vw;
+    color: black;
+
+}
+
+.endScreenData{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.endScreenData a {
+    position: absolute;
+    bottom: 10%;
+    padding: 10px;
+    border-radius: 5%;
+    background: #EDC02C;
+    color: white;
+}

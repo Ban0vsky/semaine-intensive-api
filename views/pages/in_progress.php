@@ -3,8 +3,8 @@
 <?php include '../controllers/requests.php';?>
 
     <div class="card">
-        <div class="name">NAME</div>
-        <div class="address">ADDRESS</div>
+        <div class="name"></div>
+        <div class="address"></div>
         <div class="validate">Valider</div>
     </div>
     <div class="map"></div>
@@ -24,7 +24,7 @@
             <img class="stopButton" src="assets/images/stopButton.png" alt="profile_placeholder">
             <div class="timer infos">00:00:00</div>
             <div class="score infos">
-                <span class="ongoingBirzNumber">12</span>
+                <span class="ongoingBirzNumber">0</span>
                 <img class="birzProgress" src="assets/images/beer.svg" alt="profile_placeholder">
             </div>
         </div>
@@ -32,9 +32,15 @@
     <div class="endScreen">
         <div class="endScreenData">
             <div class="recapTotal">
-                <span class="ongoingBirzNumber">TOTAL : 26</span>
+                <span class="finalScore"></span>
                 <img class="birzProgress" src="assets/images/beer.svg" alt="profile_placeholder">
             </div>
+            <div class="recapInfos">
+                <div class="recapBirz"></div>
+                <div class="recapTime"></div>
+                <div class="recapBars"></div>
+            </div>
+            <a href="../public">Et z'est rebartit !</a>
         </div>
     </div>
     <?php include '../views/partials/annex_datas.php' ?>
