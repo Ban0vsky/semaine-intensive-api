@@ -9,7 +9,7 @@
     <div class="map"></div>
     <div class="login">
     </div>
-    <div class="launcher visible">
+    <div class="launcher visibleImportant">
         <div class="launch">
             <p>Lancer le barathon</p>    
         </div>
@@ -50,7 +50,16 @@
             <p class="friends4">Thomas de Saucissonux</p>
         </div>
     </div>
-
+    <div class="profilePage">
+    <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">
+        <div class="profileData datas">
+            <h1 class="leaderTitle">Top 5</h1>
+            <p class="leader1">françois cacher</p>
+            <p class="leader2">gerard chattus</p>
+            <p class="leader3">herbert poireau</p>
+            <p class="leader4">Thomas de Saucissonux</p>
+        </div>
+    </div>
     <!-- PHP to JS variables transfert -->
     <input type="hidden" value="<?=$latitude?>" class="transfert_latitude">
     <input type="hidden" value="<?=$longitude?>" class="transfert_longitude">
