@@ -17,6 +17,7 @@ const friendListData = document.querySelector('.friendListData')
 const downBarInfos = document.querySelector('.downBarInfos')
 let closeButton = document.querySelectorAll('.closeButton')
 
+
 loginImage.addEventListener('click', () =>
 {
     let visible = document.querySelectorAll('.visible')

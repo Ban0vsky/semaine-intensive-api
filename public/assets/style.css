@@ -88,7 +88,7 @@ body{
     display: flex;
     flex-flow: column;
     align-items: center;
-    top: 9vh;
+    top: 18vh;
     left: 5vw;
     border-radius: 5px;
 }
@@ -255,6 +255,16 @@ body{
     z-index: -99999;
     background: white;
     align-items: center;
+}
+.progressBar .score 
+{
+    align-items: flex-end; 
+    display: flex;
+    width:15vw;
+}
+.progressBar .p 
+{
+    margin-right: 1vw;
 }
 .progressBarInside
 {
