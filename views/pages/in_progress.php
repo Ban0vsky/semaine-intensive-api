@@ -40,7 +40,10 @@
                 <div class="recapTime"></div>
                 <div class="recapBars"></div>
             </div>
-            <a href="../public">Et z'est rebartit !</a>
+            <form action="../public" method="get">
+                <input type="hidden" name="xfpp" value="" class="transfertScore">
+                <input type="submit" value="Et z'est rebartit !">
+            </form>
         </div>
     </div>
     <?php include '../views/partials/annex_datas.php' ?>

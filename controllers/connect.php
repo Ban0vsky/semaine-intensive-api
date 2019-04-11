@@ -93,4 +93,20 @@
 		unset($_SESSION['logout']);
 	}
 
+	// Save Score
+	if (isset($_GET['xfpp']))
+	{
+		include '../controllers/profil.php';
+		$previousScore = $profil_data->score;
+		$newScore = $previousScore + $_GET['xfpp']/2;
+		$idScore = $profil_data->id;
+
+		$query = $db->prepare("UPDATE users SET score = :score WHERE id = :id");
+		$data = $query->execute(
+			[
+			"score" =>	$newScore,
+			"id" =>	$idScore
+			]
+		);
+	}
 ?>
