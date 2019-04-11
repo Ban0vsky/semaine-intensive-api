@@ -1,3 +1,4 @@
+<?php include '../controllers/connect.php';?>
 <?php include '../views/partials/header.php';?>
 <?php include '../controllers/requests.php';?>
 

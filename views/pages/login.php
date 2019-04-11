@@ -1,7 +1,7 @@
 <?php
+include '../controllers/connect.php';
 include '../views/partials/header.php';
 include '../controllers/requests.php';
-include '../controllers/connect.php';
 include '../controllers/errors.php'; 
 ?>
 
@@ -19,7 +19,7 @@ include '../controllers/errors.php';
          <h1 class="loginButton logs visible">Se connecter</h1>
              <div class="loginAction logForms">
                     <p class="connexionText">Connexion</p>
-                     <form  action="#" method="post">
+                     <form action="#" method="post">
                              <div>
                                 <p class="connexionFormText">Pseudo</p>
                                  <input class="input" type="text" name="username" placeholder="">
@@ -32,9 +32,8 @@ include '../controllers/errors.php';
              </div>
              <div class="signupAction logForms">
                     <p class="connexionText">Inscription</p>            
-                    <form  action="#" method="post">
-                    
-                    <div>
+                    <form action="#" method="post">
+                            <div>
                                 <p class="connexionFormText">Pseudo</p>
                                  <input type="text" class="input" name="username" placeholder="">
                                  <p class="connexionFormText">Mot de passe</p>

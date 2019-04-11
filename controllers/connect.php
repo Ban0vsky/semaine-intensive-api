@@ -1,5 +1,4 @@
 <?php 
-	session_start();
 
 	// variable declaration
 	$username = "";
@@ -90,8 +89,8 @@
 	// Log out
 	if (isset($_POST['logout'])) 
 	{
-		session_destroy();
-		unset($_SESSION['username']);
+		unset($_SESSION['user']);
+		unset($_SESSION['logout']);
 	}
 
 ?>

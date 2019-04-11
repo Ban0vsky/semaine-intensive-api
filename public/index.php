@@ -9,12 +9,12 @@ include '../database/database.php';
 define ('URL','http://localhost/TEST_S2_H2-master/public/');
 
 
- $q = !empty($_GET['q']) ? $_GET['q'] : 'home';
+$q = !empty($_GET['q']) ? $_GET['q'] : 'home';
 
- if($q == 'home')
+if($q == 'home')
 {
     $controller = 'home';
 }
  
 
- include '../controllers/'.$controller.'.php';
+include '../controllers/'.$controller.'.php';
