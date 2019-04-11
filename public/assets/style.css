@@ -367,6 +367,7 @@ body{
 .datas{
     opacity: 0;
     margin-top: 4vh;
+    position: absolute;
 }
 .friendsTitle, .historyTitle, .leaderTitle
 {
