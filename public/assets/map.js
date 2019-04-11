@@ -1,8 +1,6 @@
 let map
 let latitude = parseFloat(document.querySelector('.transfert_latitude').value)
 let longitude = parseFloat(document.querySelector('.transfert_longitude').value)
-console.log(document.querySelector('.transfert_placeholder'))
-console.log(document.querySelector('.transfert_placeholder').value)
 let placeholder = document.querySelector('.transfert_placeholder').value
 
 
@@ -15,6 +13,7 @@ let heatMap
 
 if (placeholder==1)
 {
+    console.log('yes')
     function initMap() 
     {  
         let latLng = new google.maps.LatLng(latitude,longitude)
