@@ -11,6 +11,26 @@ body{
     z-index: 0;
     position: relative;
 }
+.error{
+    width: 100vw;
+    height: 100vh;
+    z-index: 50000000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+.alertPopup{
+    background: white;
+    color: #EDC02C;
+    padding: 10vh 5vw;
+    text-align: center;
+    border-radius: 5px;
+}
 .lottieAnimation{
     background-color: #1E1C26;
     position: absolute;
@@ -135,6 +155,7 @@ body{
     position: absolute;
     right: 4vw;
     top: 4vw;
+    z-index: 500000;
 }
 
 .finalCloseButton{
@@ -416,6 +437,13 @@ body{
     display: flex;
     width: 50vw;
     justify-content: flex-start;
+    margin: 0 5vw;
+}
+.leaderList{
+    overflow: scroll;
+    overflow-y:scroll;
+    height: 35vh;
+    margin: 2vh;
 }
 .friendImage{
     height: 9vh;
@@ -510,7 +538,7 @@ body{
     margin-top: 3vh;
     font-size: 1em;
 }
-.notificationImg{
+.notificationButton{
     width: 8vw;
     right: 4vw;
     top: 4vw;
@@ -525,6 +553,16 @@ body{
     line-height: 2em;
     font-size: 1em;
     border-radius: 100%;
+}
+.addFriendData{
+    background-color: #fff;
+    width: 50vw;
+    height: 30vh;
+}
+.friendRequestData{
+    background-color: #fff;
+    width: 50vw;
+    height: 30vh;
 }
 .map {
     width: 100vw;

@@ -12,16 +12,15 @@ if (isset($_POST['delete']))
 }
 
 // Add a friend
-if ($_GET['action'] == "add") 
+if (isset($_POST['add'])) 
 {
     $query= $db->prepare("INSERT INTO friends(username_1, username_2, is_pending) VALUES (:username_1, :username_2, :is_pending)");
     $query->execute
     ([
-        "username_1" =>  $_GET['usernamefrom'],
-        "username_2" =>  $_GET['usernameto'],
+        "username_1" =>  $_POST['usernamefrom'],
+        "username_2" =>  $_POST['usernameto'],
         "is_pending" => 1,
     ]);
-
 }
 
 // Accept a friend request
