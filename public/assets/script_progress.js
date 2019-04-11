@@ -12,18 +12,19 @@ const downBarInfos = document.querySelector('.downBarInfos')
 const launch = document.querySelector('.launch')
 const progressBar = document.querySelector('.progressBar')
 let closeButton = document.querySelectorAll('.closeButton')
+const profilePage = document.querySelector('.profilePage')
+const profileData = document.querySelector('.profileData')
+
 
 loginImage.addEventListener('click', () =>
 {
-    let visible = document.querySelectorAll('.visible')
-    for (var i = 0; i < visible.length; i++) {
-        visible[i].classList.remove('visible')
-        console.log("yes")
-      }
-login.classList.add('visible')
-signupButton.classList.add('visible')
-loginButton.classList.add('visible')
-welcomeText.classList.add('visible')
+  let visible = document.querySelectorAll('.visible')
+for (var i = 0; i < visible.length; i++) {
+    visible[i].classList.remove('visible')
+    console.log("yes")
+  }
+  profilePage.classList.add('visible')
+  profileData.classList.add('visible')
 })
 
 
