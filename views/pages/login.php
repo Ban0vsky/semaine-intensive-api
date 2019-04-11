@@ -29,10 +29,6 @@ include '../controllers/errors.php';
                              </div>
                      </form>
 
-                     <form method="post" action="#">
-                        <button type="submit" name="logout">Se deconnecter</button>
-                    </form >
-
              </div>
              <div class="signupAction logForms">
                     <p class="connexionText">Inscription</p>            
