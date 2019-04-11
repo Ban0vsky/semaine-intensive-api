@@ -1,6 +1,13 @@
-<?php include '../views/partials/header.php';?>
-<?php include '../controllers/requests.php';?>
-<?php include '../controllers/connect.php';?>
+<?php
+include '../views/partials/header.php';
+include '../controllers/requests.php';
+include '../controllers/connect.php';
+include '../controllers/errors.php'; 
+if (isset($_SESSION['user'])) {
+    $_SESSION['success'] = "You are now logged in";
+    echo ($_SESSION['success']." as ".$_SESSION['user']);
+}
+?>
 
     <div class="lottieAnimation"></div>
     <div class="card">

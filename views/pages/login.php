@@ -1,5 +1,11 @@
-<?php include '../views/partials/header.php';?>
-<?php include '../controllers/requests.php';?>
+<?php
+include '../views/partials/header.php';
+include '../controllers/requests.php';
+include '../controllers/connect.php';
+include '../controllers/errors.php'; 
+
+?>
+
     <div class="lottieAnimation"></div>
     <div class="card">
         <div class="name">NAME</div>
@@ -17,24 +23,30 @@
                      <form  action="#" method="post">
                              <div>
                                 <p class="connexionFormText">Pseudo</p>
-                                 <input class="input" required name="login_pseudo" cols="50" rows="5" placeholder="">
+                                 <input class="input" type="text" name="username" placeholder="">
                                  <p class="connexionFormText">Mot de passe</p>
-                                 <input class="input" required name="login_password" cols="50" rows="5" placeholder="">
-                                 <input class="submitter" type="submit">
+                                 <input class="input" type="password" name="password" placeholder="">
+                                 <input class="submitter" type="submit" name="login_user">
                              </div>
                      </form>
+
+                     <form method="post" action="#">
+                        <button type="submit" name="logout">Se deconnecter</button>
+                    </form >
+
              </div>
              <div class="signupAction logForms">
                     <p class="connexionText">Inscription</p>            
                     <form  action="#" method="post">
+                    
                     <div>
                                 <p class="connexionFormText">Pseudo</p>
-                                 <input class="input" required name="login_pseudo" cols="50" rows="5" placeholder="">
+                                 <input type="text" class="input" name="username" placeholder="">
                                  <p class="connexionFormText">Mot de passe</p>
-                                 <input class="input" required name="login_password_confirmation" cols="50" rows="5" placeholder="">
-                                 <p class="connexionFormText">Confirmation de mot de passe</p>
-                                 <input class="input" required name="login_password" cols="50" rows="5" placeholder="">
-                                 <input class="submitter" type="submit">
+                                 <input type="password" class="input" name="password_1" placeholder="">
+                                 <p class="connexionFormText">Confirmer mot de passe</p>
+                                 <input type="password" class="input" name="password_2" placeholder="">
+                                 <input class="submitter" type="submit" name="reg_user">
                              </div>
                     </form>
              </div>
@@ -43,6 +55,7 @@
     <!-- PHP to JS variables transfert -->
     <input type="hidden" value="<?=$latitude?>" class="transfert_latitude">
     <input type="hidden" value="<?=$longitude?>" class="transfert_longitude">
+    <input type="hidden" value="<?=$placeholder?>" class="transfert_placeholder">
     
     <script src="../public/assets/map.js"></script>
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk-OSdp7TIS3sVlIQxMC-taE1x_5ZbKjw&libraries=places,visualization"></script>
