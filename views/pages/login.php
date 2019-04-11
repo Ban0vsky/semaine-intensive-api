@@ -4,8 +4,6 @@ include '../views/partials/header.php';
 include '../controllers/requests.php';
 include '../controllers/errors.php'; 
 ?>
-
-    <div class="lottieAnimation"></div>
     <div class="card">
         <div class="name">NAME</div>
         <div class="address">ADDRESS</div>
