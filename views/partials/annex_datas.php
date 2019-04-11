@@ -20,16 +20,6 @@
          <button class="disconnectButton" type="submit" name="logout">Me déconnecter</button>
       </form >
       <p class="deleteAccountButton">Supprimer mon compte</p>
-      <div class="killAccount">
-         <div class="killAccountData datas">
-            <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">                
-            <h1 class="historyTitle">Palmarès</h1>
-            <p class="history1">françois cacher</p>
-            <p class="history2">gerard chattus</p>
-            <p class="history3">herbert poireau</p>
-            <p class="history4">Thomas de Saucissonux</p>
-         </div>
-      </div>
    </div>
 </div>
 <div class="downBarInfos">
@@ -172,3 +162,13 @@
         <?php endif; ?>
    </div>
 </div>
+<div class="killAccount">
+        <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">                
+         <div class="killAccountData datas">
+            <h1 class="historyTitle">Palmarès</h1>
+            <p class="history1">françois cacher</p>
+            <p class="history2">gerard chattus</p>
+            <p class="history3">herbert poireau</p>
+            <p class="history4">Thomas de Saucissonux</p>
+         </div>
+      </div>
