@@ -75,8 +75,9 @@
     <!-- PHP to JS variables transfert -->
     <input type="hidden" value="<?=$latitude?>" class="transfert_latitude">
     <input type="hidden" value="<?=$longitude?>" class="transfert_longitude">
+    <input type="hidden" value="<?=$placeholder?>" class="transfert_placeholder">
     
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk-OSdp7TIS3sVlIQxMC-taE1x_5ZbKjw&libraries=places,visualization"></script>
     <script src="../public/assets/map.js"></script>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk-OSdp7TIS3sVlIQxMC-taE1x_5ZbKjw&libraries=places,visualization"></script>
 
 <?php include '../views/partials/footer.php' ?>

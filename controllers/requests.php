@@ -40,6 +40,8 @@
         //     $barsMap = $barsMap.$markerLat.','.$markerLng.'|';
         // }
         $barsMap = 'https://www.google.com/maps/embed/v1/search?key=AIzaSyBk-OSdp7TIS3sVlIQxMC-taE1x_5ZbKjw&center='.$latitude.','.$longitude.'&zoom=14&q=bar';
+   
+        $placeholder = 0;
     }
     
     // Geolocalisation
@@ -47,5 +49,13 @@
     {
         $latitude = 0;
         $longitude = 0;
+        $placeholder = 0;
+    }
+
+    else
+    {
+        $latitude = 48.8534;
+        $longitude = 2.3488;   
+        $placeholder = 1;    
     }
 ?>
