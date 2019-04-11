@@ -1,5 +1,6 @@
 <?php include '../views/partials/header.php';?>
 <?php include '../controllers/requests.php';?>
+<?php include '../controllers/connect.php';?>
 
     <div class="card">
         <div class="name">NAME</div>
@@ -18,9 +19,9 @@
                      <form  action="#" method="post">
                              <div>
                                 <p class="connexionFormText">Pseudo</p>
-                                 <input class="input" required name="login_pseudo" cols="50" rows="5" placeholder="">
+                                 <input class="input" required name="login_pseudo" placeholder="">
                                  <p class="connexionFormText">Mot de passe</p>
-                                 <input class="input" required name="login_password" cols="50" rows="5" placeholder="">
+                                 <input class="input" required name="login_password" placeholder="">
                                  <input class="submitter" type="submit">
                              </div>
                      </form>
@@ -28,14 +29,19 @@
              <div class="signupAction logForms">
                     <p class="connexionText">Inscription</p>            
                     <form  action="#" method="post">
+                    <?php include('../controllers/errors.php'); ?>
                     <div>
                                 <p class="connexionFormText">Pseudo</p>
-                                 <input class="input" required name="login_pseudo" cols="50" rows="5" placeholder="">
+                                 <input type="text" class="input" name="username" placeholder="">
                                  <p class="connexionFormText">Mot de passe</p>
-                                 <input class="input" required name="login_password" cols="50" rows="5" placeholder="">
-                                 <input class="submitter" type="submit">
+                                 <input type="password" class="input" name="password_1" placeholder="">
+                                 <p class="connexionFormText">Confirmer mot de passe</p>
+                                 <input type="password" class="input" name="password_2" placeholder="">
+                                 <input class="submitter" type="submit" name="reg_user">
                              </div>
                     </form>
+
+
              </div>
     </div>
     <div class="searchBottomPanel">
