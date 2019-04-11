@@ -538,7 +538,7 @@ body{
     margin-top: 3vh;
     font-size: 1em;
 }
-.notificationImg{
+.notificationButton{
     width: 8vw;
     right: 4vw;
     top: 4vw;
@@ -555,6 +555,11 @@ body{
     border-radius: 100%;
 }
 .addFriendData{
+    background-color: #fff;
+    width: 50vw;
+    height: 30vh;
+}
+.friendRequestData{
     background-color: #fff;
     width: 50vw;
     height: 30vh;

@@ -4,8 +4,8 @@
    include '../controllers/action.php';
    include '../controllers/search.php';
    include '../controllers/friends.php';
-   
-   ?>
+?>
+
 <div class="profilePage">
    <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">
    <img class="signupImage" src="assets/images/profilepic.png" alt="profile_placeholder">
@@ -136,8 +136,20 @@
       </div>
       <span class="addFriendButton">Ajouter un ami</span>
       <div class="notificationImgBlock">
-         <img class="notificationImg" src="assets/images/notification.png" alt="profile_placeholder">
-         <div class="notificationNumber">1</div>
+         <img class="notificationButton" src="assets/images/notification.png" alt="profile_placeholder">
+         <div class="notificationNumber">
+            <?php
+                $count = 0;
+                for ($i=0; $i < sizeof($friends_data); $i++)
+                {
+                    if ($friends_data[$i]->is_pending == TRUE && $friends_data[$i]->username_2 == $_SESSION['user']) 
+                    {
+                        $count++;
+                    }
+                }
+                echo $count;
+            ?>
+         </div>
       </div>
    </div>
    <div class="addFriendData datas">
@@ -149,7 +161,6 @@
 
         <?php if(isset($_POST['search']) && $result): ?>
             <p><?= $search_result->username ?></p>
-            <a href="action.php?action=add&usernamefrom=<?= $_SESSION['user'] ?>&usernameto=<?= $result->username ?>">Add</a>
             <?php 
                 echo (" 
                     <form action='#' method='post'>
@@ -161,6 +172,7 @@
             ?>
         <?php endif; ?>
    </div>
+<<<<<<< HEAD
 </div>
 <div class="killAccount">
         <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">                
@@ -172,3 +184,31 @@
             <p class="history4">Thomas de Saucissonux</p>
          </div>
       </div>
+=======
+   <div class="friendRequestData datas">
+       <h1>Mes invitations</h1>
+       <?php
+            for ($i=0; $i < sizeof($friends_data); $i++)
+            {
+                if ($friends_data[$i]->is_pending == TRUE && $friends_data[$i]->username_2 == $_SESSION['user']) 
+                {
+                    echo $friends_data[$i]->username_1;
+                    echo (" 
+                        <form action='#' method='post'>
+                            <input type='hidden' name='id' value='".$friends_data[$i]->id."' />
+                            <input type='submit' name='accept' value='Ajouter en ami'>
+                        </form> "
+                    );
+                    echo (" 
+                        <form action='#' method='post'>
+                            <input type='hidden' name='id' value='".$friends_data[$i]->id."' />
+                            <input type='submit' name='delete' value='delete'>
+                        </form> "
+                    );
+                    $user_check[] = $friends_data[$i]->username_1;
+                }
+            }
+        ?>
+   </div>
+</div>
+>>>>>>> 4d05c0fc415d6333d4bddd9877f494971c33cb46
