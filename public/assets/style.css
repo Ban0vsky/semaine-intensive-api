@@ -364,6 +364,42 @@ body{
     color: #EDC02C;
     align-items: center;
 }
+.leader{
+    display: flex;
+    width: 50vw;
+    justify-content: flex-start;
+}
+.friendImage{
+    height: 9vh;
+    margin-right: 5vw;
+}
+.friendScore{
+    color: black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1em;
+    font-weight: 300;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.friendName{
+    margin: 0;
+    color: #EDC02C;
+    font-size: 1.3em;
+}
+.friendScoreDisplay{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 10vw;
+}
+.friendScoreDisplay p{
+    margin-right: 1vw;
+}
+.birzFriend{
+    height:2.5vh;
+}
 .datas{
     opacity: 0;
     margin-top: 4vh;
