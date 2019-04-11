@@ -30,6 +30,7 @@ let finalScore = document.querySelector('.finalScore')
 let recapBirz = document.querySelector('.recapBirz')
 let recapTime = document.querySelector('.recapTime')
 let recapBars = document.querySelector('.recapBars')
+let transfertScore = document.querySelector('.transfertScore')
 
 
 deleteAccountButton.addEventListener('click', () =>
@@ -134,6 +135,7 @@ stopButton.addEventListener('click', () =>
   for (let m = 0 ; m<barsDone.length ; m++){
     recapBars.innerHTML = recapBars.innerHTML + barsDone[m] + ", "
   }
+  transfertScore.setAttribute('value', finalScoreCount)
 
 })
 
