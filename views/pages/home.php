@@ -8,8 +8,8 @@ include '../controllers/errors.php';
         <div class="lottieJson"></div>
     </div>
     <div class="card">
-        <div class="name">Nom</div>
-        <div class="address">Adresse</div>
+        <div class="name"></div>
+        <div class="address"></div>
         <div class="validate">Valider</div>
     </div>
     <div class="map"></div>

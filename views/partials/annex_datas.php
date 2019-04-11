@@ -1,8 +1,8 @@
 <?php
 include '../controllers/profil.php';
 include '../controllers/leaderboard.php';
-include '../controllers/friends.php';
 include '../controllers/action.php';
+include '../controllers/friends.php';
 
 ?>
 
@@ -22,7 +22,8 @@ include '../controllers/action.php';
         <p class="deleteAccountButton">Supprimer mon compte</p>
         <div class="killAccount">
            <div class="killAccountData datas">
-           <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">                <h1 class="historyTitle">Palmarès</h1>
+           <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">                
+                <h1 class="historyTitle">Palmarès</h1>
                 <p class="history1">françois cacher</p>
                 <p class="history2">gerard chattus</p>
                 <p class="history3">herbert poireau</p>
