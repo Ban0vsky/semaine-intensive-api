@@ -473,8 +473,11 @@ body{
     z-index: 99999;
 }
 
-
 .visibleImportant{
     opacity:1;
     z-index: 99999;
+}
+
+a{
+    text-decoration: none;
 }
