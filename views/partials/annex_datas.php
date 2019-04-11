@@ -1,5 +1,14 @@
 <div class="profilePage">
     <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">
+<<<<<<< HEAD
+    <img class="signupImage" src="assets/images/profilepic.png" alt="profile_placeholder">
+    <div class="profileData">
+        <p class="profileName">BeerMasterDuMarais</p>
+        <div class="profileScore">
+            <span>12</span>
+            <img class="birzProfile" src="assets/images/beer.svg" alt="profile_placeholder">
+            <span>(6ème)</span>
+=======
         <div class="profileData datas">
             <h1 class="leaderTitle">Top 5</h1>
             <p class="leader1">françois cacher</p>
@@ -10,7 +19,12 @@
                 <button type="submit" name="logout">Se deconnecter</button>
             </form >
         </div>
+>>>>>>> f34561e0f6a3d85fb0ba984b30da2444e8fee2bd
         </div>
+        <p class="disconnectButton">Me déconnecter</p>
+        <p class="deleteAccountButton">Supprimer mon compte</p>
+    </div>
+</div>
 <div class="downBarInfos">
     <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">
         <div class="leaderboardData datas">

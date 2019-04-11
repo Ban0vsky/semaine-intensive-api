@@ -118,7 +118,7 @@ body{
 }
 .signupImage
 {
-    width: 50vw;
+    width: 40vw;
 }
 .signupButton
 {
@@ -301,7 +301,7 @@ body{
     opacity: 0;
     z-index: -99999;
     position: absolute;
-    height: 55vh;
+    height: 45vh;
     width: 76vw;
     background-color: white;
     display: flex;
@@ -311,6 +311,40 @@ body{
     border-radius: 5px;
     color: #EDC02C;
     align-items: center;
+}
+.profileData{
+    text-align: center;
+}
+.profileName{
+    color: #EDC02C;
+    font-size: 1.2em;
+    margin: 0;
+}
+.profileScore
+{
+    color: black;
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    margin: 2vh 0vw 5vh 0vw;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+.profileScore span{
+    margin-right: 1vw;
+    line-height: 1;
+}
+.birzProfile{
+    height: 3vh;
+    margin-right: 1vw;
+}
+.disconnectButton{
+    color: black;
+    font-size: 0.9em;
+}
+.deleteAccountButton{
+    color: #C62727;
+    font-size: 0.9em;
 }
 
 .downBarInfos{
@@ -330,7 +364,6 @@ body{
 }
 .datas{
     opacity: 0;
-    position: absolute;
     margin-top: 4vh;
 }
 .friendsTitle, .historyTitle, .leaderTitle
