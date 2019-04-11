@@ -2,6 +2,7 @@
 <?php include '../controllers/requests.php';?>
 <?php include '../controllers/connect.php';?>
 
+    <div class="lottieAnimation"></div>
     <div class="card">
         <div class="name">NAME</div>
         <div class="address">ADDRESS</div>
@@ -10,7 +11,6 @@
     <div class="map"></div>
     <div class="login visible">
         <img class="signupImage" src="assets/images/profilepic.png" alt="profile_placeholder">
-        <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">
         <p class="welcomeText logs visible">Première cuite ?</p>
          <h1 class="signupButton logs visible">S'inscrire</h1>
          <h1 class="loginButton logs visible">Se connecter</h1>

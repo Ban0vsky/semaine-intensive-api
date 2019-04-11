@@ -3,6 +3,7 @@
         <img src="assets/images/trophy.svg" class="leaderboard downIcon">
         <img src="assets/images/cheers.svg" class="friendList downIcon">
     </div>
+    <script src="assets/lottie.js"></script>
     <script src="assets/script.js"></script>
 </body>
 </html>
