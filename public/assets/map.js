@@ -13,11 +13,9 @@ let heatMap
 
 if (placeholder==1)
 {
-    console.log('yes')
     function initMap() 
     {  
         let latLng = new google.maps.LatLng(latitude,longitude)
-
         map = new google.maps.Map(document.querySelector('.map'), 
         {
             center: latLng,
@@ -278,8 +276,9 @@ if (placeholder==1)
                 ]
                 }
             ]
-        });
+        })
     }
+    initMap()
 }
 
 else

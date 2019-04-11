@@ -14,6 +14,8 @@ const progressBar = document.querySelector('.progressBar')
 let closeButton = document.querySelectorAll('.closeButton')
 const profilePage = document.querySelector('.profilePage')
 const profileData = document.querySelector('.profileData')
+const endScreen = document.querySelector('.endScreen')
+const stopButton = document.querySelector('.stopButton')
 
 
 loginImage.addEventListener('click', () =>
@@ -28,7 +30,16 @@ for (var i = 0; i < visible.length; i++) {
 })
 
 
-
+stopButton.addEventListener('click', () =>
+{
+  let visible = document.querySelectorAll('.visible')
+for (var i = 0; i < visible.length; i++) {
+    visible[i].classList.remove('visible')
+    console.log("yes")
+  }
+  progressBar.classList.remove('visibleImportant')
+  endScreen.classList.add('visible')
+})
 
 history.addEventListener('click', () =>
 {

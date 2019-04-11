@@ -70,7 +70,7 @@ body{
     height: 4vh;
     margin-left: 15vw;
     background: #EDC02C;
-    border-style: none; 
+    border-style: none;
     border-radius: 5px;
     padding: 1vh 0;
     color:white;
@@ -111,6 +111,13 @@ body{
     font-weight: 400;
 }
 .closeButton{
+    width: 8vw;
+    position: absolute;
+    right: 4vw;
+    top: 4vw;
+}
+
+.finalCloseButton{
     width: 8vw;
     position: absolute;
     right: 4vw;
@@ -243,7 +250,7 @@ body{
 }
 .canceller{
     height: 5vh;
-    font-size: 1em;    
+    font-size: 1em;
     width: 90vw;
     background-color: #C62727;
     justify-content: center;
@@ -269,13 +276,13 @@ body{
     background: white;
     align-items: center;
 }
-.progressBar .score 
+.progressBar .score
 {
-    align-items: flex-end; 
+    align-items: flex-end;
     display: flex;
     width:15vw;
 }
-.progressBar .p 
+.progressBar .p
 {
     margin-right: 1vw;
 }
@@ -364,9 +371,60 @@ body{
     color: #EDC02C;
     align-items: center;
 }
+.leader{
+    display: flex;
+    width: 50vw;
+    justify-content: flex-start;
+}
+.friendImage{
+    height: 9vh;
+    margin-right: 5vw;
+}
+.friendScore{
+    color: black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1em;
+    font-weight: 300;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.friendName{
+    margin: 0;
+    color: #EDC02C;
+    font-size: 1.3em;
+}
+.friendScoreDisplay{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 10vw;
+}
+.friendScoreDisplay p{
+    margin-right: 1vw;
+}
+.birzFriend{
+    height:2.5vh;
+}
+.endScreen{
+    opacity: 0;
+    z-index: -99999;
+    position: absolute;
+    height: 55vh;
+    width: 76vw;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    top: 20vh;
+    left: 11vw;
+    border-radius: 5px;
+    color: #EDC02C;
+    align-items: center;
 .datas{
     opacity: 0;
     margin-top: 4vh;
+    position: absolute;
 }
 .friendsTitle, .historyTitle, .leaderTitle
 {
