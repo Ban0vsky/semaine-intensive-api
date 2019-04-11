@@ -59,6 +59,7 @@ include '../controllers/action.php';
         </div>
         <div class="friendListData datas">
             <h1 class="friendsTitle">Mes amis</h1>
+            <div class="friendContent">
             <?php
                 for ($i=0; $i < sizeof($friends_data); $i++) 
                 { 
@@ -138,5 +139,12 @@ include '../controllers/action.php';
                     echo '</br>';
                 }
             ?>
+            </div>
+            <span class="addFriendButton">Valider</span>
+            <div class="notificationImgBlock">
+            <img class="notificationImg" src="assets/images/notification.png" alt="profile_placeholder">
+            <div class="notificationNumber">1</div>
+            </div>
+            
         </div>
     </div>
