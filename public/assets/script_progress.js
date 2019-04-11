@@ -17,7 +17,16 @@ const profilePage = document.querySelector('.profilePage')
 const profileData = document.querySelector('.profileData')
 const endScreen = document.querySelector('.endScreen')
 const stopButton = document.querySelector('.stopButton')
+const endScreenData = document.querySelector('.endScreenData')
+const killAccount = document.querySelector('.killAccount')
+const killAccountData = document.querySelector('.killAccountData')
+const deleteAccountButton = document.querySelector('.deleteAccountButton')
 
+deleteAccountButton.addEventListener('click', () =>
+{
+  killAccount.classList.add('visible')
+  killAccountData.classList.add('visible')
+})
 
 loginImage.addEventListener('click', () =>
 {
@@ -40,6 +49,7 @@ for (var i = 0; i < visible.length; i++) {
   }
   progressBar.classList.remove('visibleImportant')
   endScreen.classList.add('visible')
+  endScreenData.classList.add('visible')
 })
 
 history.addEventListener('click', () =>
