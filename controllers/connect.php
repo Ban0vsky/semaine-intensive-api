@@ -24,7 +24,7 @@
 			]
 		);
 		$verify = $query->fetch();
-		if ($verify) {array_push($errors, "Ce pseudo est déjà prit");}
+		if ($verify) {array_push($errors, "Ce pseudo est déjà pris");}
 
 
 		if ($password_1 != $password_2) {
@@ -57,10 +57,10 @@
 		$password = $_POST['password'];
 
 		if (empty($username)) {
-			array_push($errors, "Username is required");
+			array_push($errors, "Un pseudo est requis");
 		}
 		if (empty($password)) {
-			array_push($errors, "Password is required");
+			array_push($errors, "Un mot de passe est requis");
 		}
 
 		if (count($errors) == 0) {
@@ -81,7 +81,7 @@
 			if ($data) {
 				$_SESSION['user'] = $username;
 			}else {
-				array_push($errors, "Wrong username/password combination");
+				array_push($errors, "Pseudo et/ou mot de passe incorrect(s)");
 			}
 		}
 	}

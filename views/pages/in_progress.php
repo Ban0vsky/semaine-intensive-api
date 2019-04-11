@@ -40,9 +40,9 @@
                 <div class="recapTime"></div>
                 <div class="recapBars"></div>
             </div>
-            <form action="../public" method="get">
+            <form class="applyFinishBarathon" action="../public" method="get">
                 <input type="hidden" name="xfpp" value="" class="transfertScore">
-                <input type="submit" value="Et z'est rebartit !">
+                <input class="endedBarathonValidateText" type="submit" value="Et z'est rebartit !">
             </form>
         </div>
     </div>

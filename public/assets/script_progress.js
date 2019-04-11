@@ -26,6 +26,7 @@ const endScreenData = document.querySelector('.endScreenData')
 const killAccount = document.querySelector('.killAccount')
 const killAccountData = document.querySelector('.killAccountData')
 const deleteAccountButton = document.querySelector('.deleteAccountButton')
+const deleteAccountValidation = document.querySelector('.quitValidation')
 let finalScore = document.querySelector('.finalScore')
 let recapBirz = document.querySelector('.recapBirz')
 let recapTime = document.querySelector('.recapTime')
@@ -33,10 +34,10 @@ let recapBars = document.querySelector('.recapBars')
 let transfertScore = document.querySelector('.transfertScore')
 
 
-deleteAccountButton.addEventListener('click', () =>
-{
+deleteAccountButton.addEventListener('click', () => {
   killAccount.classList.add('visible')
   killAccountData.classList.add('visible')
+  profilePage.classList.remove('visible')
 })
 
 loginImage.addEventListener('click', () =>
@@ -129,8 +130,8 @@ stopButton.addEventListener('click', () =>
   endScreenData.classList.add('visible')
   chronoStop()
   finalScore.innerHTML = "Score : " + finalScoreCount
-  recapBirz.innerHTML = "Vous avez bu " + ongoingBirzNumberCount + " verres "
-  recapTime.innerHTML = "en l'espace de " + hr + " heures, " + min + " minutes et " + sec + " secondes ! <br><br>"
+  recapBirz.innerHTML = "Vous avez bu " + ongoingBirzNumberCount + " verre(s) "
+  recapTime.innerHTML = "en l'espace de " + hr + " heure(s), " + min + " minute(s) et " + sec + " seconde(s) ! <br><br>"
   recapBars.innerHTML = "Vous avez écumé les bars suivants : <br>" 
   for (let m = 0 ; m<barsDone.length ; m++){
     recapBars.innerHTML = recapBars.innerHTML + barsDone[m] + ", "
