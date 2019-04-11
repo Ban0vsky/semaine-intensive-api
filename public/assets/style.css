@@ -55,6 +55,11 @@ body{
     flex-flow: column;
     align-items: center;
 }
+.loginAction form{
+    background: white;
+    border-radius: 5px;
+    padding-bottom: 3vh;
+}
 .connexionText{
     color: black;
     font-size: 1.5em;
@@ -70,6 +75,11 @@ body{
     flex-flow: column;
     align-items: center;
 }
+.signupAction form{
+    background: white;
+    border-radius: 5px;
+    padding-bottom: 3vh;
+}
 .input{
     width: 60vw;
     height: 4vh;
@@ -84,6 +94,7 @@ body{
 {
     color: black;
     margin-left: 15vw;
+    margin-bottom:0;
 }
 .submitter{
     width: 30vw;
@@ -151,7 +162,7 @@ body{
     margin-bottom: 2vh;
 }
 .logForms{
-    margin-top: 25vh;
+    margin-top: 15vh;
 }
 .downBar{
     width: 100%;
