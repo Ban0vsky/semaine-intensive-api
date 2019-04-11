@@ -1,5 +1,7 @@
 <?php
-include '../controllers/profil.php'
+include '../controllers/profil.php';
+include '../controllers/leaderboard.php';
+include '../controllers/leaderboard.php';
 
 ?>
 
@@ -23,17 +25,21 @@ include '../controllers/profil.php'
     <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">
         <div class="leaderboardData datas">
             <h1 class="leaderTitle">Top 5</h1>
-            <div class="leader">
-                <img class="friendImage" src="assets/images/profilepic.png" alt="profile_placeholder">
-                <div class="friendScore">
-                    <p class="friendName"> <?= $data->username ?></p>
-                    <div class="friendScoreDisplay">                    
-                        <span><?= $data->score ?></span>
-                        <img class="birzFriend" src="assets/images/beer.svg" alt="profile_placeholder">
+            <?php foreach ($data as $datas): ?>
+                <div class="leader">
+                    <img class="friendImage" src="assets/images/profilepic.png" alt="profile_placeholder">
+                    <div class="friendScore">
+                        <p class="friendName"> <?= $datas->username ?></p>
+                        <div class="friendScoreDisplay">                    
+                            <span><?= $datas->score ?></span>
+                            <img class="birzFriend" src="assets/images/beer.svg" alt="profile_placeholder">
+                        </div>
                     </div>
                 </div>
-            </div>
+            <?php endforeach;?>
         </div>
+
+
         <div class="historyData datas">
             <h1 class="historyTitle">Palmarès</h1>
             <p class="history1">françois cacher</p>
