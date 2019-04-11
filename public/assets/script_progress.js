@@ -48,6 +48,7 @@ for (var i = 0; i < visible.length; i++) {
     console.log("yes")
   }
   progressBar.classList.remove('visibleImportant')
+  currentAdress.classList.remove('visibleImportant')
   endScreen.classList.add('visible')
   endScreenData.classList.add('visible')
 })

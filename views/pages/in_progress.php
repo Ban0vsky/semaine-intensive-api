@@ -30,13 +30,11 @@
         </div>
     </div>
     <div class="endScreen">
-    <a href="../public/"><img class="finalCloseButton" src="assets/images/cancel.svg" alt="profile_placeholder"></a>
-        <div class="endScreenData datas">
-            <h1 class="leaderTitle">Top 5</h1>
-            <p class="leader1">françois cacher</p>
-            <p class="leader2">gerard chattus</p>
-            <p class="leader3">herbert poireau</p>
-            <p class="leader4">Thomas de Saucissonux</p>
+        <div class="endScreenData">
+            <div class="recapTotal">
+                <span class="ongoingBirzNumber">TOTAL : 26</span>
+                <img class="birzProgress" src="assets/images/beer.svg" alt="profile_placeholder">
+            </div>
         </div>
     </div>
     <?php include '../views/partials/annex_datas.php' ?>
