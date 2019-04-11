@@ -1,6 +1,6 @@
 <?php include '../views/partials/header.php';?>
 <?php include '../controllers/requests.php';?>
-
+    <div class="lottieAnimation"></div>
     <div class="card">
         <div class="name">NAME</div>
         <div class="address">ADDRESS</div>
@@ -32,6 +32,8 @@
                                 <p class="connexionFormText">Pseudo</p>
                                  <input class="input" required name="login_pseudo" cols="50" rows="5" placeholder="">
                                  <p class="connexionFormText">Mot de passe</p>
+                                 <input class="input" required name="login_password_confirmation" cols="50" rows="5" placeholder="">
+                                 <p class="connexionFormText">Confirmation de mot de passe</p>
                                  <input class="input" required name="login_password" cols="50" rows="5" placeholder="">
                                  <input class="submitter" type="submit">
                              </div>
