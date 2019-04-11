@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+}
+  
 body{
     padding:0;
     margin:0;
@@ -5,7 +9,7 @@ body{
     width: 100vw;
     font-family: 'Open Sans', sans-serif;
     z-index: 0;
-    overflow: hidden;
+    position: relative;
 }
 .lottieAnimation{
     background-color: #1E1C26;
@@ -245,7 +249,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 75vh;
+    bottom: 10vh;
     opacity:0;
     z-index: -99999;
 }
@@ -280,6 +284,23 @@ body{
 {
     margin: 0;
 }
+.currentAdress{
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    bottom: 20vh;
+    opacity: 0;
+    z-index: -99999;
+    background: #EDC02C;
+    color: white;
+    padding: 10px;
+    left: 10vw;
+    border-radius: 5px 5px 0px 0px;
+
+}
 .progressBar{
     width: 100%;
     height: 10vh;
@@ -297,6 +318,9 @@ body{
     align-items: flex-end;
     display: flex;
     width:15vw;
+}
+.ongoingBirzNumber{
+    margin-right: 1vw;
 }
 .progressBar .p
 {
@@ -454,35 +478,42 @@ body{
 }
 
 .card{
-    width: 40vw;
-    height: 15vh;
+    height: 10vh;
     position: fixed;
     top: 25%;
     left: 30vw;
     z-index: 1;
     background: white;
-    border-radius: 10%;
+    border-radius: 5px;    
     box-shadow: 10px 10px 50px #00000055;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.2s ease;
+    padding: 0 5vw;
 }
 
 .card .name{
-    color: goldenrod;
+    color: #EDC02C;
+    font-size: 0.8em;
 }
 
 .card .address{
-    font-size: 10px;
+    font-size: 0.6em;
+    margin-bottom: 1vh;
 }
 
 .card .validate{
     bottom: 0;
+    background: #EDC02C;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0 5vw;
 }
 .visible{
     opacity:1;

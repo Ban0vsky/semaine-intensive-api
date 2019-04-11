@@ -11,6 +11,7 @@ const friendListData = document.querySelector('.friendListData')
 const downBarInfos = document.querySelector('.downBarInfos')
 const launch = document.querySelector('.launch')
 const progressBar = document.querySelector('.progressBar')
+const currentAdress = document.querySelector('.currentAdress')
 let closeButton = document.querySelectorAll('.closeButton')
 const profilePage = document.querySelector('.profilePage')
 const profileData = document.querySelector('.profileData')
@@ -100,4 +101,5 @@ for (var i = 0; i < visibleImportant.length; i++) {
     console.log("yes")
   }
 progressBar.classList.add('visibleImportant')
+currentAdress.classList.add('visibleImportant')
 })

@@ -18,12 +18,13 @@
             </div>
         </a>    
     </div>
+    <div class="currentAdress">Rue Mouffetard</div>
     <div class="progressBar">
         <div class="progressBarInside">
             <img class="stopButton" src="assets/images/stopButton.png" alt="profile_placeholder">
             <div class="timer infos">00:00:00</div>
             <div class="score infos">
-                <span>12</span>
+                <span class="ongoingBirzNumber">12</span>
                 <img class="birzProgress" src="assets/images/beer.svg" alt="profile_placeholder">
             </div>
         </div>
