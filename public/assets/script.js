@@ -26,6 +26,7 @@ deleteAccountButton.addEventListener('click', () =>
 {
   killAccount.classList.add('visible')
   killAccountData.classList.add('visible')
+  profilePage.classList.remove('visible')
 })
 
 loginImage.addEventListener('click', () =>
