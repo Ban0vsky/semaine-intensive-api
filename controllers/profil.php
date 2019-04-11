@@ -8,7 +8,7 @@ $query->execute(
     ]
 );
 
-$data = $query->fetch();
+$profil_data = $query->fetch();
 
 $query = $db->prepare("SELECT COUNT(*) as rang FROM users WHERE score >= (SELECT score  FROM users WHERE username =:username ORDER BY score)"); 
 $query->execute(
@@ -17,6 +17,6 @@ $query->execute(
     ]
 );
 
-$resultat= $query->fetch();
+$user_score_result= $query->fetch();
 
 ?>

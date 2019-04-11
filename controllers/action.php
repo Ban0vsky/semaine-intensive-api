@@ -1,13 +1,14 @@
 <?php
-require 'database.php';
-session_start();
-
 
 // Delete a relation with a friend or a friend request
-if ($_GET['action'] == "delete") 
+if (isset($_POST['delete']))
 {
-    $db->query("DELETE FROM friends WHERE id=".$_GET['id']);
-    header("Location:friends.php");
+    $query = $db->prepare("DELETE FROM friends WHERE id=:id");
+    $query->execute(
+        [
+        "id" => $_POST['id'],
+        ]
+    );
 }
 
 // Add a friend
@@ -20,15 +21,17 @@ if ($_GET['action'] == "add")
         "username_2" =>  $_GET['usernameto'],
         "is_pending" => 1,
     ]);
-    header("Location:friends.php");
+
 }
 
 // Accept a friend request
-if ($_GET['action'] == "accept") 
+if (isset($_POST['accept'])) 
 {
-    $db->query("UPDATE friends SET is_pending = 0 WHERE id = ".$_GET['id']); 
-    header("Location:friends.php");
+    $query = $db->prepare("UPDATE friends SET is_pending = 0 WHERE id =:id");
+    $query->execute(
+        [
+        "id" => $_POST['id'],
+        ]
+    );
 }
-
-
 ?>
