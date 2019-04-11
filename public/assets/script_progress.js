@@ -78,10 +78,15 @@ closeButton[j].addEventListener('click', () =>
 
 launch.addEventListener('click', () =>
 {
-let visible = document.querySelectorAll('.visible')
+  let visible = document.querySelectorAll('.visible')
 for (var i = 0; i < visible.length; i++) {
     visible[i].classList.remove('visible')
     console.log("yes")
   }
-progressBar.classList.add('visible')
+let visibleImportant = document.querySelectorAll('.visibleImportant')
+for (var i = 0; i < visibleImportant.length; i++) {
+    visibleImportant[i].classList.remove('visibleImportant')
+    console.log("yes")
+  }
+progressBar.classList.add('visibleImportant')
 })
