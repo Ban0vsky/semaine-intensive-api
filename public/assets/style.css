@@ -5,6 +5,7 @@ body{
     width: 100vw;
     font-family: 'Open Sans', sans-serif;
     z-index: 0;
+    overflow: hidden;
 }
 .map{
     width: 100%;
