@@ -4,6 +4,6 @@
         <img src="assets/images/cheers.svg" class="friendList downIcon">
     </div>
     <script src="assets/lottie.js"></script>
-    <script src="assets/script.js"></script>
+    <script src="assets/script_login.js"></script>
 </body>
 </html>
