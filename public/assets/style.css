@@ -116,6 +116,13 @@ body{
     right: 4vw;
     top: 4vw;
 }
+
+.finalCloseButton{
+    width: 8vw;
+    position: absolute;
+    right: 4vw;
+    top: 4vw;
+}
 .signupImage
 {
     width: 40vw;
@@ -350,6 +357,21 @@ body{
 }
 
 .downBarInfos{
+    opacity: 0;
+    z-index: -99999;
+    position: absolute;
+    height: 55vh;
+    width: 76vw;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    top: 20vh;
+    left: 11vw;
+    border-radius: 5px;
+    color: #EDC02C;
+    align-items: center;
+}
+.endScreen{
     opacity: 0;
     z-index: -99999;
     position: absolute;
