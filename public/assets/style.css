@@ -339,6 +339,8 @@ body{
     margin-right: 1vw;
 }
 .disconnectButton{
+    border-style: none;
+    background: none;
     color: black;
     font-size: 0.9em;
 }
