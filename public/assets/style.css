@@ -476,6 +476,67 @@ body{
 .birzFriend{
     height:2.5vh;
 }
+.friendContent{
+    display: flex;
+    flex-direction: column;
+}
+.friends{
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 5vw;
+    overflow: scroll;
+    overflow-y:scroll;
+    height: 35vh;
+    margin: 2vh;
+}
+.bite{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+.bite2{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.bite3{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+}
+.bite3 img{
+    margin-top: auto;
+    width: 7vh;
+    height: 7vh;
+}
+.bite2 p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.bite2 .score{
+    font-size: 0.7em;
+    color: black;
+}
+.bite3 form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.buttonIMG{
+    width: 3vh;
+    height: 3vh;
+    border-style: none;
+    background: none;
+    background-image: url(../assets/images/cancel.svg);
+    background-position:center center;
+    background-repeat: no-repeat;
+    font-size: 0; 
+
+}
 .endScreen{
     opacity: 0;
     z-index: -99999;
