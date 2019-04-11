@@ -41,11 +41,16 @@ $resultat= $query->fetch();
     <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">
         <div class="leaderboardData datas">
             <h1 class="leaderTitle">Top 5</h1>
-            <p class="leader1">Nom n°1</p>
-            <p class="leader2">Nom n°2</p>
-            <p class="leader3">Nom n°3</p>
-            <p class="leader4">Nom n°4</p>
-            <p class="leader5">Nom n°5</p>
+            <div class="leader">
+                <img class="friendImage" src="assets/images/profilepic.png" alt="profile_placeholder">
+                <div class="friendScore">
+                    <p class="friendName"> <?= $data->username ?></p>
+                    <div class="friendScoreDisplay">                    
+                        <span><?= $data->score ?></span>
+                        <img class="birzFriend" src="assets/images/beer.svg" alt="profile_placeholder">
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="historyData datas">
             <h1 class="historyTitle">Palmarès</h1>
