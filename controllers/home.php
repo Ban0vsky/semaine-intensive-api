@@ -26,4 +26,12 @@
 // $query = $pdo->query('SELECT * FROM expenses');
 // $returnedData = $query->fetchAll();
 
-include '../views/pages/home.php';
+if (isset($_GET['geolocalisation']) or isset($_GET['address']))
+{
+    include '../views/pages/home.php';
+}
+else 
+{
+
+    include '../views/pages/home.php';
+}
