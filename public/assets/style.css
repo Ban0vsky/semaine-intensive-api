@@ -427,7 +427,7 @@ body{
     margin-top: 4vh;
     position: absolute;
 }
-.friendsTitle, .historyTitle, .leaderTitle
+.friendsTitle, .historyTitle, .Title
 {
     text-align: center;
     font-size: 2.2em;
