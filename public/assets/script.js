@@ -19,6 +19,8 @@ const killAccountData = document.querySelector('.killAccountData')
 const deleteAccountButton = document.querySelector('.deleteAccountButton')
 const addFriendButton = document.querySelector('.addFriendButton')
 const addFriendData = document.querySelector('.addFriendData')
+const notificationButton = document.querySelector('.notificationButton')
+const friendRequestData = document.querySelector('.friendRequestData')
 
 deleteAccountButton.addEventListener('click', () =>
 {
@@ -109,6 +111,17 @@ for (var i = 0; i < visible.length; i++) {
     console.log("yes")
   }
 addFriendData.classList.add('visible')
+downBarInfos.classList.add('visible')
+})
+
+notificationButton.addEventListener('click', () =>
+{
+let visible = document.querySelectorAll('.visible')
+for (var i = 0; i < visible.length; i++) {
+    visible[i].classList.remove('visible')
+    console.log("yes")
+  }
+  friendRequestData.classList.add('visible')
 downBarInfos.classList.add('visible')
 })
 

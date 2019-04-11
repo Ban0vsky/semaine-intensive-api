@@ -16,5 +16,4 @@ if ($_SESSION['user'])
     $user_check[] = $_SESSION['user'];
 }
 
-
 ?>
