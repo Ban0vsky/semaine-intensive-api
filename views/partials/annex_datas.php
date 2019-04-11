@@ -1,12 +1,35 @@
+<?php
+
+$query = $db->prepare('SELECT * FROM users WHERE username=:username');
+
+$query->execute(
+    [
+    "username" => $_SESSION['user'],
+    ]
+);
+
+$data = $query->fetch();
+
+$query = $db->prepare("SELECT COUNT(*) as rang FROM users WHERE score >= (SELECT score  FROM users WHERE username =:username ORDER BY score)"); 
+$query->execute(
+    [
+    "username" => $_SESSION['user'],
+    ]
+);
+
+$resultat= $query->fetch();
+
+?>
+
 <div class="profilePage">
     <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">
     <img class="signupImage" src="assets/images/profilepic.png" alt="profile_placeholder">
     <div class="profileData">
-        <p class="profileName"> <?=$_SESSION['user'] ?></p>
+        <p class="profileName"> <?= $data->username ?></p>
         <div class="profileScore">
-            <span>12</span>
+            <span><?= $data->score ?></span>
             <img class="birzProfile" src="assets/images/beer.svg" alt="profile_placeholder">
-            <span>(6ème)</span>
+            <span>(Rang <?= $resultat->rang ?>)</span>
         </div>
         <form method="post" action="index.php">
             <button class="disconnectButton" type="submit" name="logout">Me déconnecter</button>
