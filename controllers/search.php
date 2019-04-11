@@ -12,7 +12,7 @@ if (isset($_POST['search']))
     $prepare->bindValue('username', $_POST['username']);
 
     $prepare->execute();
-    $result = $prepare->fetch();
+    $search_result = $prepare->fetch();
 }
 
 

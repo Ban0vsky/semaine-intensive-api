@@ -17,6 +17,8 @@ const profileData = document.querySelector('.profileData')
 const killAccount = document.querySelector('.killAccount')
 const killAccountData = document.querySelector('.killAccountData')
 const deleteAccountButton = document.querySelector('.deleteAccountButton')
+const addFriendButton = document.querySelector('.addFriendButton')
+const addFriendData = document.querySelector('.addFriendData')
 
 deleteAccountButton.addEventListener('click', () =>
 {
@@ -99,6 +101,17 @@ background.addEventListener('click', () =>
       }
 })
 
+addFriendButton.addEventListener('click', () =>
+{
+let visible = document.querySelectorAll('.visible')
+for (var i = 0; i < visible.length; i++) {
+    visible[i].classList.remove('visible')
+    console.log("yes")
+  }
+addFriendData.classList.add('visible')
+downBarInfos.classList.add('visible')
+})
+
 for (var j = 0; j < closeButton.length; j++) {
 closeButton[j].addEventListener('click', () =>
 {
@@ -109,4 +122,6 @@ closeButton[j].addEventListener('click', () =>
       }
 })
 }
+
+
 
