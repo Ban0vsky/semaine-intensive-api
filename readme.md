@@ -79,7 +79,7 @@ Vous allez cliquer jusqu'à plus soif ! La meilleure application de barathon est
 - Cyrille Banovsky
 - Yoan Gross 
 
-#### Développeurs readme.me
+#### Développeurs Readme
 
 - Quentin Maillard
 - Lucas Lehot
