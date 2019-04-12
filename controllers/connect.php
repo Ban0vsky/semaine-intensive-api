@@ -103,6 +103,12 @@
 				"username" =>	$userToDelete
 			]
 		);
+		$query2 = $db->prepare("DELETE FROM friends WHERE (username_1 = :username) or (username_2 = :username) ");
+		$data = $query2->execute(
+			[
+				"username" =>	$userToDelete
+			]
+		);
 		unset($_SESSION['user']);
 		unset($_POST['deleteAccount']);
 	}

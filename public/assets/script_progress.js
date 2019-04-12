@@ -1,4 +1,3 @@
-console.log("WE GOOD BROTHER")
 const loginImage = document.querySelector('.loginImage')
 const background = document.querySelector('.map')
 const login = document.querySelector('.login')
@@ -32,6 +31,8 @@ let recapBirz = document.querySelector('.recapBirz')
 let recapTime = document.querySelector('.recapTime')
 let recapBars = document.querySelector('.recapBars')
 let transfertScore = document.querySelector('.transfertScore')
+const notificationButton = document.querySelector('.notificationButton')
+const friendRequestData = document.querySelector('.friendRequestData')
 
 
 deleteAccountButton.addEventListener('click', () => {
@@ -197,4 +198,10 @@ validate.addEventListener(
   }
 )
 
-
+notificationButton.addEventListener('click', () => {
+  let visible = document.querySelectorAll('.visible')
+  for (var i = 0; i < visible.length; i++) {
+      visible[i].classList.remove('visible')
+  }
+  friendRequestData.classList.add('visible')
+})
