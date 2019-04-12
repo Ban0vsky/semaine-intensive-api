@@ -55,7 +55,7 @@ Vous allez cliquer jusqu'à plus soif ! La meilleure application de barathon est
 - Cyrille Banovsky
 - Yoan Gross 
 
-#### Développeurs Back-end
+#### Développeurs Back-End
 
 - Quentin Maillard
 - Lucas Lehot

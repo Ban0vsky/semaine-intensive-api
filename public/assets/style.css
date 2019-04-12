@@ -603,6 +603,10 @@ body{
     width: 76vw;
     text-align: center;
     border-radius: 0px 0px 5px 5px;
+	border: none;
+	cursor: pointer;
+	outline: inherit;
+
 }
 .datas{
     opacity: 0;
