@@ -76,7 +76,7 @@
                             if ($friends_data[$i]->is_pending) {
                                 echo("<p>(en attente)</p>");
                             }
-                            echo ('<p>score : '.$result->score.'</p>');
+                            echo ('<p>score : '.$result['score'].'</p>');
                     
                             $query = $db->prepare("SELECT COUNT(*) as rang FROM users WHERE score >= (SELECT score  FROM users WHERE username =:username ORDER BY score)"); 
                             $query->execute(
