@@ -21,104 +21,107 @@ const friendRequestData = document.querySelector('.friendRequestData')
 const rotationDisclaimer = document.querySelector('.rotationDisclaimer')
 
 deleteAccountButton.addEventListener('click', () => {
-  console.log()
-    killAccount.classList.add('visible')
-    killAccountData.classList.add('visible')
-    profilePage.classList.remove('visible')
+  killAccount.classList.add('visible')
+  killAccountData.classList.add('visible')
+  profilePage.classList.remove('visible')
 })
 
 
 
 loginImage.addEventListener('click', () => {
-    let visible = document.querySelectorAll('.visible')
-    for (var i = 0; i < visible.length; i++) {
-        visible[i].classList.remove('visible')
-        console.log("yes")
-    }
-    profilePage.classList.add('visible')
-    profileData.classList.add('visible')
+  let visible = document.querySelectorAll('.visible')
+  for (var i = 0; i < visible.length; i++) 
+  {
+      visible[i].classList.remove('visible')
+  }
+  profilePage.classList.add('visible')
+  profileData.classList.add('visible')
 })
 
 
 
 history.addEventListener('click', () => {
-    let visible = document.querySelectorAll('.visible')
-    for (var i = 0; i < visible.length; i++) {
-        visible[i].classList.remove('visible')
-        console.log("yes")
-    }
-    historyData.classList.add('visible')
-    downBarInfos.classList.add('visible')
+  let visible = document.querySelectorAll('.visible')
+  for (var i = 0; i < visible.length; i++) 
+  {
+    visible[i].classList.remove('visible')
+  }
+  historyData.classList.add('visible')
+  downBarInfos.classList.add('visible')
 })
 
 leaderboard.addEventListener('click', () => {
-    let visible = document.querySelectorAll('.visible')
-    for (var i = 0; i < visible.length; i++) {
-        visible[i].classList.remove('visible')
-        console.log("yes")
-    }
-    leaderboardData.classList.add('visible')
-    downBarInfos.classList.add('visible')
+  let visible = document.querySelectorAll('.visible')
+  for (var i = 0; i < visible.length; i++)  
+  {
+    visible[i].classList.remove('visible')
+  }
+  leaderboardData.classList.add('visible')
+  downBarInfos.classList.add('visible')
 })
 
 friendList.addEventListener('click', () => {
-    let visible = document.querySelectorAll('.visible')
-    for (var i = 0; i < visible.length; i++) {
-        visible[i].classList.remove('visible')
-        console.log("yes")
-    }
-    friendListData.classList.add('visible')
-    downBarInfos.classList.add('visible')
+  let visible = document.querySelectorAll('.visible')
+  for (var i = 0; i < visible.length; i++) 
+  {
+    visible[i].classList.remove('visible')
+  }
+  friendListData.classList.add('visible')
+  downBarInfos.classList.add('visible')
 })
 
 
 
 background.addEventListener('click', () => {
-    let visible = document.querySelectorAll('.visible')
-    for (var i = 0; i < visible.length; i++) {
-        visible[i].classList.remove('visible')
-        console.log("yes")
-    }
+  let visible = document.querySelectorAll('.visible')
+  for (var i = 0; i < visible.length; i++) 
+  {
+    visible[i].classList.remove('visible')
+  }
 })
 
 addFriendButton.addEventListener('click', () => {
-    let visible = document.querySelectorAll('.visible')
-    for (var i = 0; i < visible.length; i++) {
-        visible[i].classList.remove('visible')
-        console.log("yes")
-    }
-    addFriendData.classList.add('visible')
-    downBarInfos.classList.add('visible')
+  let visible = document.querySelectorAll('.visible')
+  for (var i = 0; i < visible.length; i++) 
+  {
+    visible[i].classList.remove('visible')
+  }
+  addFriendData.classList.add('visible')
+  downBarInfos.classList.add('visible')
 })
 
 notificationButton.addEventListener('click', () => {
-    let visible = document.querySelectorAll('.visible')
-    for (var i = 0; i < visible.length; i++) {
-        visible[i].classList.remove('visible')
-    }
-    friendRequestData.classList.add('visible')
+  let visible = document.querySelectorAll('.visible')
+  for (var i = 0; i < visible.length; i++) 
+  {
+    visible[i].classList.remove('visible')
+  }
+  friendRequestData.classList.add('visible')
 })
 
 for (var j = 0; j < closeButton.length; j++) {
-    closeButton[j].addEventListener('click', () => {
-        let visible = document.querySelectorAll('.visible')
-        for (var i = 0; i < visible.length; i++) {
-            visible[i].classList.remove('visible')
-        }
-    })
+  closeButton[j].addEventListener('click', () => {
+    let visible = document.querySelectorAll('.visible')
+    for (var i = 0; i < visible.length; i++) 
+    {
+      visible[i].classList.remove('visible')
+    }
+  })
 }
 
 
 setTimeout(function() {
-    window.addEventListener('orientationchange', function() {
-        if(window.innerWidth < window.innerHeight){
-            rotationDisclaimer.style.display="flex"
-            rotationDisclaimer.style.opacity="1"
-        }
-        else
-        {
-            rotationDisclaimer.style.display="none"
-            rotationDisclaimer.style.opacity="0"
-        }
-    });
-      }, 1000);
+  window.addEventListener('orientationchange', function() 
+  {
+    if(window.innerWidth < window.innerHeight)
+    {
+      rotationDisclaimer.style.display="flex"
+      rotationDisclaimer.style.opacity="1"
+    }
+    else
+    {
+      rotationDisclaimer.style.display="none"
+      rotationDisclaimer.style.opacity="0"
+    }
+  });
+}, 1000);

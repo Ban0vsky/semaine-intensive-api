@@ -26,7 +26,8 @@ launch.addEventListener('click', () =>
     console.log("yes")
   }
   let visibleImportant = document.querySelectorAll('.visibleImportant')
-  for (var i = 0; i < visibleImportant.length; i++) {
+  for (var i = 0; i < visibleImportant.length; i++) 
+  {
     visibleImportant[i].classList.remove('visibleImportant')
     console.log("yes")
   }
@@ -52,7 +53,8 @@ stopButton.addEventListener('click', () =>
   recapBirz.innerHTML = "Vous avez bu " + ongoingBirzNumberCount + " verre(s) "
   recapTime.innerHTML = "en l'espace de " + hr + " heure(s), " + min + " minute(s) et " + sec + " seconde(s) ! <br><br>"
   recapBars.innerHTML = "Vous avez écumé les bars suivants : <br>" 
-  for (let m = 0 ; m<barsDone.length ; m++){
+  for (let m = 0 ; m<barsDone.length ; m++)
+  {
     recapBars.innerHTML = recapBars.innerHTML + barsDone[m] + ", "
   }
   transfertScore.setAttribute('value', finalScoreCount)
@@ -67,7 +69,8 @@ let hr = 0
 let min = 0
 let sec = 0
 
-function chrono(){
+function chrono()
+{
 	end = new Date()
 	diff = end - start
 	diff = new Date(diff)
@@ -84,14 +87,16 @@ function chrono(){
 	timerID = setTimeout("chrono()", 10)
 }
 
-function chronoStart(){
+function chronoStart()
+{
 	start = new Date()
 	chrono()
 }
 
 let finalScoreCount = 0
 
-function chronoStop(){
+function chronoStop()
+{
   let totalTime = hr + ":" + min + ":" + sec
   clearTimeout(timerID)
   console.log(totalTime)

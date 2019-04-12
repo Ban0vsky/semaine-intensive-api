@@ -24,16 +24,20 @@
 			]
 		);
 		$verify = $query->fetch();
-		if (!empty($verify->id)) {array_push($errors, "Ce pseudo est déjà pris");}
+		if (!empty($verify->id)) 
+		{
+			array_push($errors, "Ce pseudo est déjà pris");
+		}
 
-
-		if ($password_1 != $password_2) {
+		if ($password_1 != $password_2) 
+		{
 			array_push($errors, "Entrez deux mots de passe identiques");
 		}
 
 		// register user if there are no errors in the form
 		if (count($errors) == 0) {
-			$password = md5($password_1);//encrypt the password before saving in the database
+			$password = md5($password_1);
+			//encrypt the password before saving in the database
 			
 			$query= $db->prepare("INSERT INTO users (username, password) VALUES (:username, :password)");
 			$data = $query->execute(
@@ -43,12 +47,9 @@
 				]
 			);
 
-			
-
 			$_SESSION['user'] = $username;
 			
 		}
-
 	}
 
 	// LOGIN USER

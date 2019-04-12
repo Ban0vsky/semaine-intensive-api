@@ -7,7 +7,7 @@ if(!document.querySelector('.noMoreAnimation'))
   {
     lottieContainer.style.opacity = "0"
     setTimeout(function() {
-        lottieContainer.style.display = "none"
+      lottieContainer.style.display = "none"
     }, 600);
   }, 4000);
 
