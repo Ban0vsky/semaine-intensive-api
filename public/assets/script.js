@@ -116,10 +116,8 @@ notificationButton.addEventListener('click', () => {
     let visible = document.querySelectorAll('.visible')
     for (var i = 0; i < visible.length; i++) {
         visible[i].classList.remove('visible')
-        console.log("yes")
     }
     friendRequestData.classList.add('visible')
-    downBarInfos.classList.add('visible')
 })
 
 for (var j = 0; j < closeButton.length; j++) {
@@ -127,7 +125,6 @@ for (var j = 0; j < closeButton.length; j++) {
         let visible = document.querySelectorAll('.visible')
         for (var i = 0; i < visible.length; i++) {
             visible[i].classList.remove('visible')
-            console.log("yes")
         }
     })
 }
