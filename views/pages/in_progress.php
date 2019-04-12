@@ -56,6 +56,6 @@
 <input type="hidden" value="<?=$placeholder?>" class="transfert_placeholder">
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk-OSdp7TIS3sVlIQxMC-taE1x_5ZbKjw&libraries=places,visualization"></script>
-<script src="../public/assets/map.js"></script>
+<script src="assets/map.js"></script>
 
 <?php include '../views/partials/footer_progress.php' ?>
