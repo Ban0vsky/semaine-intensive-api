@@ -805,3 +805,18 @@ a{
     color: #ecbf2b;
     margin-top: 8vh;
 }
+
+.rotationDisclaimer{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    color: #ecbf2b;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index:999999;
+}
