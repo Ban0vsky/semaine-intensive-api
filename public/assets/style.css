@@ -716,6 +716,42 @@ body{
     margin-bottom: 1.1vh;
     margin-left: 0;
 }
+.searchResult{
+    background-color: #fff;
+    height: 30vh;
+    width: 76vw;
+    border-radius: 5px;
+    position:absolute;
+    margin-top: 0;
+    opacity: 0;
+    z-index: -9999;
+}
+.addInput{
+    width: 100%;
+    height: 4vh;
+    background: #EDC02C;
+    border-style: none;
+    border-radius: 5px;
+    padding: 1vh 0;
+    color: white;
+    text-align: center;
+    margin-top:2vh;
+}
+.searchResult div{
+    width: 70%;
+    margin: auto;
+    margin-top: 4vh;
+}
+.searchResult p{
+    width: 20%;
+    margin: auto;
+}
+.searchResult h1{
+    width: 30%;
+    font-size: 1.5em;
+    margin: auto;
+    margin-top: 4vh;
+}
 .requestResult{
     width: 50%;
     margin: auto;
