@@ -56,10 +56,10 @@
                  <?php
                     for ($i=0; $i < sizeof($friends_data); $i++) 
                     { 
-                        echo '<div class="bite3"> ';
-                        echo '<img src="assets/images/profilepic.png" alt="profile_placeholder">';
                         if ($friends_data[$i]->username_1 == $_SESSION['user']) 
                         {
+                            echo '<div class="bite3"> ';
+                            echo '<img src="assets/images/profilepic.png" alt="profile_placeholder">';
                             echo '<div class="bite2">';
                                 echo("<p>".$friends_data[$i]->username_2."</p>");
 
@@ -103,7 +103,9 @@
                         else 
                         {
                             if ($friends_data[$i]->is_pending == FALSE) 
-                            {
+                            {   
+                                echo '<div class="bite3"> ';
+                                echo '<img src="assets/images/profilepic.png" alt="profile_placeholder">';
                                 echo '<div class="bite2">';
                                 echo ($friends_data[$i]->username_1);
                                 $user_check[] = $friends_data[$i]->username_1;
@@ -138,6 +140,7 @@
                                     </form> 
                                 </div>
                                 ");
+                                echo '</div>';
                             }
                         }
                     }
@@ -145,32 +148,35 @@
             </div>
         </div>
       </div>
-      <span class="addFriendButton">Ajouter un ami</span>
-      <div class="notificationImgBlock">
-         <img class="notificationButton" src="assets/images/notification.png" alt="profile_placeholder">
-         <div class="notificationNumber">
-            <?php
-                $count = 0;
-                for ($i=0; $i < sizeof($friends_data); $i++)
-                {
-                    if ($friends_data[$i]->is_pending == TRUE && $friends_data[$i]->username_2 == $_SESSION['user']) 
+      <div class="friendContentFooter">
+        <span class="addFriendButton">Ajouter un ami</span>
+        <div class="notificationImgBlock">
+            <img class="notificationButton" src="assets/images/notification.png" alt="profile_placeholder">
+            <div class="notificationNumber">
+                <?php
+                    $count = 0;
+                    for ($i=0; $i < sizeof($friends_data); $i++)
                     {
-                        $count++;
+                        if ($friends_data[$i]->is_pending == TRUE && $friends_data[$i]->username_2 == $_SESSION['user']) 
+                        {
+                            $count++;
+                        }
                     }
-                }
-                echo $count;
-            ?>
-         </div>
+                    echo $count;
+                ?>
+            </div>
+        </div>
       </div>
    </div>
    <div class="addFriendData datas">
         <h1>Ajouter des amis</h1>
+        <p>Pseudo</p>
         <form action="#" method="post"> 
-            <input name="username" type="text" placeholder="entrez pseudo"> 
+            <input class="input search" name="username" type="text"> 
             <button type="submit" name="search">Chercher</button>
         </form>
 
-        <?php if(isset($_POST['search']) && $result): ?>
+        <?php if(isset($_POST['search']) && $search_result): ?>
             <p><?= $search_result->username ?></p>
             <?php 
                 echo (" 
@@ -192,8 +198,7 @@
          <img class="signupImage" src="assets/images/sadGuy.png" alt="profile_placeholder">
          </div>
 
-            <p class="quitText">Vous nous quittez déjà ? 
-Le petit va attraper froid...</p>
+            <p class="quitText">Vous nous quittez déjà ? Le petit va attraper froid...</p>
             <p class="quitValidation">Laissez-moi tranquille, j’ai raccroché !</p>
          </div>
       </div>
