@@ -223,7 +223,6 @@
         </form >
     </div>
 </div>
-
 <div class="friendRequestData datas">
     <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">                
         <h1 class="invitationTitle">Mes invitations</h1>
