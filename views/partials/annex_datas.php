@@ -75,7 +75,7 @@
                             if ($friends_data[$i]->is_pending) {
                                 echo("<p>(en attente)</p>");
                             }
-                            echo ('<p>score : '.$result['score'].'</p>');
+                            echo ('<p>score : '.$result->score.'</p>');
                     
                             $query = $db->prepare("SELECT COUNT(*) as rang FROM users WHERE score >= (SELECT score  FROM users WHERE username =:username ORDER BY score)"); 
                             $query->execute(
@@ -176,7 +176,7 @@
         </form>
 
         <?php if(isset($_POST['search']) && $search_result): ?>
-            <p><?= $search_result->username ?></p>
+            <p><?= $search_result->username?></p>
             <?php 
                 echo (" 
                     <form action='#' method='post'>
@@ -207,27 +207,29 @@
 <div class="friendRequestData datas">
 <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">                
        <h1 class="invitationTitle">Mes invitations</h1>
-       <?php
-            for ($i=0; $i < sizeof($friends_data); $i++)
-            {
-                if ($friends_data[$i]->is_pending == TRUE && $friends_data[$i]->username_2 == $_SESSION['user']) 
+       <div class="requestResult">
+        <?php
+                for ($i=0; $i < sizeof($friends_data); $i++)
                 {
-                    echo $friends_data[$i]->username_1;
-                    echo (" 
-                        <form action='#' method='post'>
-                            <input type='hidden' name='id' value='".$friends_data[$i]->id."' />
-                            <input type='submit' name='accept' value='Ajouter en ami'>
-                        </form> "
-                    );
-                    echo (" 
-                        <form action='#' method='post'>
-                            <input type='hidden' name='id' value='".$friends_data[$i]->id."' />
-                            <input type='submit' name='delete' value='delete'>
-                        </form> "
-                    );
-                    $user_check[] = $friends_data[$i]->username_1;
+                    if ($friends_data[$i]->is_pending == TRUE && $friends_data[$i]->username_2 == $_SESSION['user']) 
+                    {
+                        echo ('<p>'.$friends_data[$i]->username_1.'<p>');
+                        echo (" 
+                            <form action='#' method='post'>
+                                <input type='hidden' name='id' value='".$friends_data[$i]->id."' />
+                                <input class='input' type='submit' name='accept' value='Ajouter en ami'>
+                            </form> "
+                        );
+                        echo (" 
+                            <form action='#' method='post'>
+                                <input type='hidden' name='id' value='".$friends_data[$i]->id."' />
+                                <input class='input' type='submit' name='delete' value='Refuser'>
+                            </form> "
+                        );
+                        $user_check[] = $friends_data[$i]->username_1;
+                    }
                 }
-            }
-        ?>
+            ?>  
+       </div>
    </div>
 </div>
