@@ -44,8 +44,14 @@
     <div class="historyData datas">
       <h1 class="historyTitle">Palmarès</h1>
       <?php foreach ($dataPalma as $event): ?>
-        <div class="date"><?=$event->date?></div>
-        <div class="score"><?=$event->score?></div>
+      <div class="historyScore">
+      <div class="date"><?=$event->date?></div>
+      <div class="historyScoreBlock">
+      <div class="score"><?=$event->score?></div>
+    <img class="birzFriend" src="assets/images/beer.svg" alt="profile_placeholder">
+    </div>
+
+      </div>
       <?php endforeach;?>
     </div>
     <div class="friendListData datas">
