@@ -63,6 +63,7 @@ Vous allez cliquer jusqu'à plus soif ! La meilleure application de barathon est
 
 - La carte ne s'affiche pas si la recherche géolocalisée est lancée sans GPS
 - Parfois, selon l'user actif, le fetch qui sert à récupérer le score passe d'array à stdObject, provoquant une erreur dans la liste d'amis
+- Notification de pseudo déjà prit au moment de la création du compte alors que le pseudo n'est pas prit, mais le user se connecte quand meme
 
 ## Crédits
 #### Développeurs Front-End
