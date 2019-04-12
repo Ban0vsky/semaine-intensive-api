@@ -10,6 +10,10 @@ body{
     z-index: 0;
     position: relative;
 }
+*{
+    transition: opacity 0.3s ease-out; 
+    will-change: all;
+}
 .error{
     width: 100vw;
     height: 100vh;
