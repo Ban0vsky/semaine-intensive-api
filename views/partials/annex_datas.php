@@ -50,15 +50,29 @@
     </div>
     <div class="historyData datas">
       <h1 class="historyTitle">Palmarès</h1>
-      <?php foreach ($dataPalma as $event): ?>
-        <div class="historyScore">
-            <div class="date"><?=$event->date?></div>
-            <div class="historyScoreBlock">
-                <div class="score"><?=$event->score?></div>
-                <img class="birzFriend" src="assets/images/beer.svg" alt="profile_placeholder">
+      <div class="historyContainer">
+          <div>
+          <?php foreach ($dataPalma as $event): ?>
+            <div class="historyLabel">
+                <p>Date de la cuite :</p>
+                <p>Nombre de Birz :</p>
+            </div>
+        <?php endforeach;?>
           </div>
+        <div class="historyDatas">
+            <div>
+                <?php foreach ($dataPalma as $event): ?>
+                    <div class="historyScore">
+                        <div class="date"><?=$event->date?></div>
+                        <div class="historyScoreBlock">
+                            <div class="score"><?=$event->score?></div>
+                            <img class="birzFriend" src="assets/images/beer.svg" alt="profile_placeholder">
+                        </div>
+                    </div>
+                <?php endforeach;?>
+            </div>
         </div>
-      <?php endforeach;?>
+      </div>
     </div>
     <div class="friendListData datas">
         <h1 class="friendsTitle">Mes amis</h1>
