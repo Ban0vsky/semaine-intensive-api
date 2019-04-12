@@ -41,16 +41,17 @@ loginImage.addEventListener('click', () => {
     profileData.classList.add('visible')
 })
 
-setTimeout(function() {
+
+if(!document.querySelector('.noMoreAnimation'))
+{
+  setTimeout(function() 
+  {
     lottieContainer.style.opacity = "0"
     setTimeout(function() {
         lottieContainer.style.display = "none"
     }, 600);
-}, 4000);
+  }, 4000);
 
-
-if(document.querySelector('.noMoreAnimation'))
-{
   lottie.loadAnimation(
   {
     container: lottieAnimation, 

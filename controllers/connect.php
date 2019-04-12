@@ -122,5 +122,10 @@
 			"id" =>	$idScore
 			]
 		);
+		if (isset($_SESSION['noMoreAnimation'])) 
+		{
+			unset($_SESSION['noMoreAnimation']);
+		}
 	}
+
 ?>
