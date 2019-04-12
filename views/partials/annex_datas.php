@@ -4,6 +4,7 @@
    include '../controllers/action.php';
    include '../controllers/search.php';
    include '../controllers/friends.php';
+   include '../controllers/palmares.php';
 ?>
 <div class="profilePage">
    <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">
@@ -39,19 +40,19 @@
       </div>
       <?php endforeach;?>
       </div>
-   </div>
-   <div class="historyData datas">
+    </div>
+    <div class="historyData datas">
       <h1 class="historyTitle">Palmarès</h1>
-      <p class="history1">françois cacher</p>
-      <p class="history2">gerard chattus</p>
-      <p class="history3">herbert poireau</p>
-      <p class="history4">Thomas de Saucissonux</p>
-   </div>
-   <div class="friendListData datas">
-      <h1 class="friendsTitle">Mes amis</h1>
-      <div class="friendContent">
-         <div class="friendsContainer">
-             <div class="friends">
+      <?php foreach ($dataPalma as $event): ?>
+        <div class="date"><?=$event->date?></div>
+        <div class="score"><?=$event->score?></div>
+      <?php endforeach;?>
+    </div>
+    <div class="friendListData datas">
+        <h1 class="friendsTitle">Mes amis</h1>
+         <div class="friendContent">
+         <div class="friends">
+             <div class="bite">
                  <?php
                     for ($i=0; $i < sizeof($friends_data); $i++) 
                     { 

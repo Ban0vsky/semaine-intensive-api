@@ -128,6 +128,20 @@
 			"id" =>	$idScore
 			]
 		);
+		if (isset($switch) and $switch == 1) {
+			$query2 = $db->prepare("INSERT INTO events(username, score, date) VALUES (:username, :score, :date)");
+			$data = $query2->execute(
+				[
+				"username" =>	$_SESSION['user'],
+				"score" =>	$_GET['xfpp'],
+				"date" =>	date("d,m,y")
+				]
+			);
+			$switch = 0;
+		}
+		else {
+			$switch = 1;
+		}
 		if (isset($_SESSION['noMoreAnimation'])) 
 		{
 			unset($_SESSION['noMoreAnimation']);
