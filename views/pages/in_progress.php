@@ -20,7 +20,7 @@
         </div>
     </a>    
 </div>
-<div class="currentAdress">Rue Mouffetard</div>
+<div class="currentAdress">Cuite en cours...</div>
 <div class="progressBar">
     <div class="progressBarInside">
         <img class="stopButton" src="assets/images/stopButton.png" alt="profile_placeholder">

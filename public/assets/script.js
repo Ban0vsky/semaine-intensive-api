@@ -19,6 +19,9 @@ const addFriendData = document.querySelector('.addFriendData')
 const notificationButton = document.querySelector('.notificationButton')
 const friendRequestData = document.querySelector('.friendRequestData')
 const rotationDisclaimer = document.querySelector('.rotationDisclaimer')
+const searchResult = document.querySelector('.searchResult')
+const searchFriendButton = document.querySelector('.searchFriendButton')
+const toto = document.querySelector('.toto')
 
 deleteAccountButton.addEventListener('click', () => {
   killAccount.classList.add('visible')
@@ -97,7 +100,29 @@ notificationButton.addEventListener('click', () => {
     visible[i].classList.remove('visible')
   }
   friendRequestData.classList.add('visible')
+  downBarInfos.classList.add('visible')
 })
+
+// searchFriendButton.addEventListener('click', () => {
+//   let visible = document.querySelectorAll('.visible')
+//   for (var i = 0; i < visible.length; i++) 
+//   {
+//     visible[i].classList.remove('visible')
+//   }
+//   searchResult.classList.add('visible')
+//   downBarInfos.classList.add('visible')
+// })
+
+if (toto.value==2) {
+  let visible = document.querySelectorAll('.visible')
+  for (var i = 0; i < visible.length; i++) 
+  {
+    visible[i].classList.remove('visible')
+  }
+  searchResult.classList.add('visible')
+  downBarInfos.classList.add('visible')
+}
+
 
 for (var j = 0; j < closeButton.length; j++) {
   closeButton[j].addEventListener('click', () => {

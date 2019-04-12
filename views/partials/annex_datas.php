@@ -5,6 +5,13 @@
    include '../controllers/search.php';
    include '../controllers/friends.php';
    include '../controllers/palmares.php';
+
+   if (isset($_POST['friendUsername'])) {
+       $transfer_friend = 2;
+   }
+   else {
+        $transfer_friend = 3;
+   }
 ?>
 <div class="profilePage">
    <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">
@@ -177,21 +184,26 @@
         <h1>Ajouter des amis</h1>
         <p>Pseudo</p>
         <form action="#" method="post"> 
-            <input class="input search" name="username" type="text"> 
-            <button type="submit" name="search">Chercher</button>
+            <input class="input search" name="friendUsername" type="text"> 
+            <input type='hidden' class='toto' value='<?= $transfer_friend ?>'/>
+            <button class="searchFriendButton" type="submit" name="search">Chercher</button>
         </form>
-
+    </div>
+    <div class="searchResult datas">
+        <h1>Résultat</h1>
         <?php if(isset($_POST['search']) && $search_result): ?>
-            <p><?= $search_result->username?></p>
-            <?php 
-                echo (" 
-                    <form action='#' method='post'>
-                        <input type='hidden' name='usernamefrom' value='".$_SESSION['user']."' />
-                        <input type='hidden' name='usernameto' value='".$search_result->username."' />
-                        <input type='submit' name='add' value='Ajouter en ami'>
-                    </form> "
-                );
-            ?>
+            <div>
+                <p><?= $search_result->username?></p>
+                    <?php 
+                        echo (" 
+                            <form action='#' method='post'>
+                                <input type='hidden' name='usernamefrom' value='".$_SESSION['user']."' />
+                                <input type='hidden' name='usernameto' value='".$search_result->username."' />
+                                <input class='addInput' type='submit' name='add' value='Ajouter en ami'>
+                            </form> "
+                        );
+                    ?>
+            </div>
         <?php endif; ?>
     </div>
 </div>
