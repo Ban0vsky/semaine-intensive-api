@@ -617,7 +617,6 @@ body{
 .historyScore{
     display: flex;
     align-items: center;
-    width: 50vw;
     margin: 0 auto;
     justify-content: space-around;
     flex-direction: column;
@@ -625,6 +624,22 @@ body{
 .historyScoreBlock{
     width: 20vw;
     display: flex;
+}
+.historyContainer{
+    display: flex;
+    width: 72vw;
+    justify-content: space-evenly;
+    height: 35vh;
+    overflow: scroll;
+}
+.historyLabel p{
+    margin: 0;
+}
+.historyLabel{
+    margin-bottom: 2vw;
+}
+.historyScore{
+    margin-bottom: 2vw;
 }
 .score{
     margin-right: 2vw;
