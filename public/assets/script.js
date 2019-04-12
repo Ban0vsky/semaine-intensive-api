@@ -8,8 +8,6 @@ const leaderboardData = document.querySelector('.leaderboardData')
 const friendListData = document.querySelector('.friendListData')
 const downBarInfos = document.querySelector('.downBarInfos')
 let closeButton = document.querySelectorAll('.closeButton')
-let lottieAnimation = document.querySelector('.lottieJson')
-let lottieContainer = document.querySelector('.lottieAnimation')
 const profilePage = document.querySelector('.profilePage')
 const profileData = document.querySelector('.profileData')
 const killAccount = document.querySelector('.killAccount')
@@ -20,6 +18,7 @@ const addFriendButton = document.querySelector('.addFriendButton')
 const addFriendData = document.querySelector('.addFriendData')
 const notificationButton = document.querySelector('.notificationButton')
 const friendRequestData = document.querySelector('.friendRequestData')
+const rotationDisclaimer = document.querySelector('.rotationDisclaimer')
 
 deleteAccountButton.addEventListener('click', () => {
   console.log()
@@ -109,22 +108,26 @@ for (var j = 0; j < closeButton.length; j++) {
     })
 }
 
-if(!document.querySelector('.noMoreAnimation'))
-{
-  setTimeout(function() 
-  {
-    lottieContainer.style.opacity = "0"
-    setTimeout(function() {
-        lottieContainer.style.display = "none"
-    }, 600);
-  }, 4000);
 
-  lottie.loadAnimation(
-  {
-    container: lottieAnimation, 
-    renderer: 'svg',
-    loop: false,
-    autoplay: true,
-    path: './assets/beer.json'
-  });
+if(window.innerWidth > window.innerHeight){
+    rotationDisclaimer.style.display="flex"
+    rotationDisclaimer.style.opacity="1"
 }
+else
+{
+    rotationDisclaimer.style.display="none"
+    rotationDisclaimer.style.opacity="0"
+}
+
+
+window.addEventListener('orientationchange', function() {
+    if(window.innerWidth < window.innerHeight){
+        rotationDisclaimer.style.display="flex"
+        rotationDisclaimer.style.opacity="1"
+    }
+    else
+    {
+        rotationDisclaimer.style.display="none"
+        rotationDisclaimer.style.opacity="0"
+    }
+});

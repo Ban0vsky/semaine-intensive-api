@@ -481,7 +481,7 @@ body{
     flex-direction: column;
     height: 30vh;
 }
-.friends{
+.friendsContainer{
     width: 50vw;
     display: flex;
     justify-content: flex-start;
@@ -491,37 +491,37 @@ body{
     height: 35vh;
     margin: 2vh;
 }
-.bite{
+.friends{
     width:100%;
     display: flex;
     flex-direction: column;
 }
-.bite2{
+.friendInfos{
     display: flex;
     flex-direction: column;
     margin: 0;
 }
-.bite3{
+.oneFriendContainer{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 3vh;
 }
-.bite3 img{
+.oneFriendContainer img{
     margin-top: auto;
     width: 7vh;
     height: 7vh;
 }
-.bite2 p{
+.friendInfos p{
     margin-top: 0;
     margin-bottom: 0;
 }
-.bite2 .score{
+.friendInfos .score{
     font-size: 0.7em;
     color: black;
 }
-.bite3 form{
+.oneFriendContainer form{
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -663,7 +663,29 @@ body{
     border-radius: 5px;
     position:absolute;
     margin-top: 0;
-
+    opacity: 0;
+    z-index: -9999;
+}
+.friendRequestData p{
+    margin: 0;
+    color: #EDC02C;
+    font-size: 1.3em;
+}
+.friendRequestData .input{
+    width: 100%;
+    margin-bottom: 1.1vh;
+    margin-left: 0;
+}
+.requestResult{
+    width: 50%;
+    margin: auto;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.requestResult form{
+    width: 100%;
 }
 .search{
     width: 100%;
@@ -784,4 +806,19 @@ a{
     font-size: 1.8em;
     color: #ecbf2b;
     margin-top: 8vh;
+}
+
+.rotationDisclaimer{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    color: #ecbf2b;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index:999999;
 }

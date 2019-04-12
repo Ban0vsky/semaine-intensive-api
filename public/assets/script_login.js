@@ -13,6 +13,7 @@ const friendList = document.querySelector('.friendList')
 const downBarInfos = document.querySelector('.downBarInfos')
 let closeButton = document.querySelectorAll('.closeButton')
 let lottieAnimation = document.querySelector('.lottieAnimation')
+const rotationDisclaimer = document.querySelector('.rotationDisclaimer')
 
 
 loginImage.addEventListener('click', () =>
@@ -68,3 +69,25 @@ closeButton[j].addEventListener('click', () =>
 })
 }
 
+if(window.innerWidth > window.innerHeight){
+  rotationDisclaimer.style.display="flex"
+  rotationDisclaimer.style.opacity="1"
+}
+else
+{
+  rotationDisclaimer.style.display="none"
+  rotationDisclaimer.style.opacity="0"
+}
+
+
+window.addEventListener('orientationchange', function() {
+  if(window.innerWidth < window.innerHeight){
+      rotationDisclaimer.style.display="flex"
+      rotationDisclaimer.style.opacity="1"
+  }
+  else
+  {
+      rotationDisclaimer.style.display="none"
+      rotationDisclaimer.style.opacity="0"
+  }
+});

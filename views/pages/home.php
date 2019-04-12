@@ -17,7 +17,9 @@ include '../controllers/errors.php';
     ');
     }
     ?>
-
+    <div class="rotationDisclaimer">
+    <p>Oulah, ça tourne ! Repassez en Portrait, la vue est plus belle ;)</p>
+    </div>
     <div class="card">
         <div class="name"></div>
         <div class="address"></div>

@@ -6,7 +6,6 @@
    include '../controllers/friends.php';
    include '../controllers/palmares.php';
 ?>
-
 <div class="profilePage">
    <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">
    <img class="signupImage" src="assets/images/profilepic.png" alt="profile_placeholder">
@@ -59,34 +58,34 @@
                     { 
                         if ($friends_data[$i]->username_1 == $_SESSION['user']) 
                         {
-                            echo '<div class="bite3"> ';
+                            echo '<div class="oneFriendContainer"> ';
                             echo '<img src="assets/images/profilepic.png" alt="profile_placeholder">';
-                            echo '<div class="bite2">';
+                            echo '<div class="friendInfos">';
                                 echo("<p>".$friends_data[$i]->username_2."</p>");
 
                             $user_check[] = $friends_data[$i]->username_2;
 
-                            $test = $db->prepare('SELECT * FROM users WHERE username=:username');
-                            $test->execute(
+                            $userQuery = $db->prepare('SELECT * FROM users WHERE username=:username');
+                            $userQuery->execute(
                                 [
                                 "username" => $friends_data[$i]->username_2,
                                 ]
                             );
-                            $result = $test->fetch();
+                            $userResult = $userQuery->fetch();
                             echo '<div class="score">';
                             if ($friends_data[$i]->is_pending) {
                                 echo("<p>(en attente)</p>");
                             }
-                            echo ('<p>score : '.$result['score'].'</p>');
+                            echo ('<p>score : '.$userResult->score.'</p>');
                     
-                            $query = $db->prepare("SELECT COUNT(*) as rang FROM users WHERE score >= (SELECT score  FROM users WHERE username =:username ORDER BY score)"); 
-                            $query->execute(
+                            $scoreQuery = $db->prepare("SELECT COUNT(*) as rang FROM users WHERE score >= (SELECT score  FROM users WHERE username =:username ORDER BY score)"); 
+                            $scoreQuery->execute(
                                 [
                                 "username" => $friends_data[$i]->username_2,
                                 ]
                             );
-                            $resultat= $query->fetch();
-                            echo ('<p>rang : '.$resultat->rang.'</p>');
+                            $scoreResult= $scoreQuery->fetch();
+                            echo ('<p>rang : '.$scoreResult->rang.'</p>');
                             echo '</div> ';
                             echo '</div> ';
 
@@ -105,9 +104,9 @@
                         {
                             if ($friends_data[$i]->is_pending == FALSE) 
                             {   
-                                echo '<div class="bite3"> ';
+                                echo '<div class="oneFriendContainer"> ';
                                 echo '<img src="assets/images/profilepic.png" alt="profile_placeholder">';
-                                echo '<div class="bite2">';
+                                echo '<div class="friendInfos">';
                                 echo ($friends_data[$i]->username_1);
                                 $user_check[] = $friends_data[$i]->username_1;
                                 echo '<div class="score">';
@@ -178,7 +177,7 @@
         </form>
 
         <?php if(isset($_POST['search']) && $search_result): ?>
-            <p><?= $search_result->username ?></p>
+            <p><?= $search_result->username?></p>
             <?php 
                 echo (" 
                     <form action='#' method='post'>
@@ -209,27 +208,29 @@
 <div class="friendRequestData datas">
 <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">                
        <h1 class="invitationTitle">Mes invitations</h1>
-       <?php
-            for ($i=0; $i < sizeof($friends_data); $i++)
-            {
-                if ($friends_data[$i]->is_pending == TRUE && $friends_data[$i]->username_2 == $_SESSION['user']) 
+       <div class="requestResult">
+        <?php
+                for ($i=0; $i < sizeof($friends_data); $i++)
                 {
-                    echo $friends_data[$i]->username_1;
-                    echo (" 
-                        <form action='#' method='post'>
-                            <input type='hidden' name='id' value='".$friends_data[$i]->id."' />
-                            <input type='submit' name='accept' value='Ajouter en ami'>
-                        </form> "
-                    );
-                    echo (" 
-                        <form action='#' method='post'>
-                            <input type='hidden' name='id' value='".$friends_data[$i]->id."' />
-                            <input type='submit' name='delete' value='delete'>
-                        </form> "
-                    );
-                    $user_check[] = $friends_data[$i]->username_1;
+                    if ($friends_data[$i]->is_pending == TRUE && $friends_data[$i]->username_2 == $_SESSION['user']) 
+                    {
+                        echo ('<p>'.$friends_data[$i]->username_1.'<p>');
+                        echo (" 
+                            <form action='#' method='post'>
+                                <input type='hidden' name='id' value='".$friends_data[$i]->id."' />
+                                <input class='input' type='submit' name='accept' value='Ajouter en ami'>
+                            </form> "
+                        );
+                        echo (" 
+                            <form action='#' method='post'>
+                                <input type='hidden' name='id' value='".$friends_data[$i]->id."' />
+                                <input class='input' type='submit' name='delete' value='Refuser'>
+                            </form> "
+                        );
+                        $user_check[] = $friends_data[$i]->username_1;
+                    }
                 }
-            }
-        ?>
+            ?>  
+       </div>
    </div>
 </div>

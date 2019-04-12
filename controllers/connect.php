@@ -24,7 +24,7 @@
 			]
 		);
 		$verify = $query->fetch();
-		if ($verify) {array_push($errors, "Ce pseudo est déjà pris");}
+		if (!empty($verify->id)) {array_push($errors, "Ce pseudo est déjà pris");}
 
 
 		if ($password_1 != $password_2) {
