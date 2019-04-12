@@ -109,25 +109,16 @@ for (var j = 0; j < closeButton.length; j++) {
 }
 
 
-if(window.innerWidth > window.innerHeight){
-    rotationDisclaimer.style.display="flex"
-    rotationDisclaimer.style.opacity="1"
-}
-else
-{
-    rotationDisclaimer.style.display="none"
-    rotationDisclaimer.style.opacity="0"
-}
-
-
-window.addEventListener('orientationchange', function() {
-    if(window.innerWidth < window.innerHeight){
-        rotationDisclaimer.style.display="flex"
-        rotationDisclaimer.style.opacity="1"
-    }
-    else
-    {
-        rotationDisclaimer.style.display="none"
-        rotationDisclaimer.style.opacity="0"
-    }
-});
+setTimeout(function() {
+    window.addEventListener('orientationchange', function() {
+        if(window.innerWidth < window.innerHeight){
+            rotationDisclaimer.style.display="flex"
+            rotationDisclaimer.style.opacity="1"
+        }
+        else
+        {
+            rotationDisclaimer.style.display="none"
+            rotationDisclaimer.style.opacity="0"
+        }
+    });
+      }, 1000);
