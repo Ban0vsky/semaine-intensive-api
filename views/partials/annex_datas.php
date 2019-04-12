@@ -204,8 +204,10 @@
         </form >
     </div>
 </div>
+
 <div class="friendRequestData datas">
-       <h1>Mes invitations</h1>
+<img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">                
+       <h1 class="invitationTitle">Mes invitations</h1>
        <?php
             for ($i=0; $i < sizeof($friends_data); $i++)
             {

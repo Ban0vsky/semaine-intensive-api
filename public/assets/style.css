@@ -656,8 +656,14 @@ body{
 }
 .friendRequestData{
     background-color: #fff;
-    width: 50vw;
-    height: 30vh;
+    height: 55vh;
+    width: 76vw;
+    top: 15vh;
+    left: 11vw;
+    border-radius: 5px;
+    position:absolute;
+    margin-top: 0;
+
 }
 .search{
     width: 100%;
@@ -688,13 +694,13 @@ body{
 }
 
 .card{
-    height: 10vh;
+    height: 13vh;
     position: fixed;
     top: 25%;
     left: 30vw;
     z-index: 1;
     background: white;
-    border-radius: 5px;    
+    border-radius: 5px;
     box-shadow: 10px 10px 50px #00000055;
     overflow: hidden;
     display: flex;
@@ -709,11 +715,12 @@ body{
 
 .card .name{
     color: #EDC02C;
-    font-size: 0.8em;
+    font-size: 1.1em;
+    margin-bottom: 0.5vh;
 }
 
 .card .address{
-    font-size: 0.6em;
+    font-size: 0.8em;
     margin-bottom: 1vh;
 }
 
@@ -723,7 +730,7 @@ body{
     color: white;
     width: 100%;
     text-align: center;
-    padding: 0 5vw;
+    padding: 1vh 5vw;
 }
 .visible{
     opacity:1;
@@ -764,4 +771,11 @@ a{
     height: 45vh;
     justify-content: space-between;
     text-align: center;
+}
+
+.invitationTitle{
+    text-align: center;
+    font-size: 1.8em;
+    color: #ecbf2b;
+    margin-top: 8vh;
 }
