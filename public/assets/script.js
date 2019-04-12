@@ -20,6 +20,7 @@ const addFriendButton = document.querySelector('.addFriendButton')
 const addFriendData = document.querySelector('.addFriendData')
 const notificationButton = document.querySelector('.notificationButton')
 const friendRequestData = document.querySelector('.friendRequestData')
+const rotationDisclaimer = document.querySelector('.rotationDisclaimer')
 
 deleteAccountButton.addEventListener('click', () => {
   console.log()
@@ -128,3 +129,27 @@ if(!document.querySelector('.noMoreAnimation'))
     path: './assets/beer.json'
   });
 }
+
+
+if(window.innerWidth > window.innerHeight){
+    rotationDisclaimer.style.display="flex"
+    rotationDisclaimer.style.opacity="1"
+}
+else
+{
+    rotationDisclaimer.style.display="none"
+    rotationDisclaimer.style.opacity="0"
+}
+
+
+window.addEventListener('orientationchange', function() {
+    if(window.innerWidth < window.innerHeight){
+        rotationDisclaimer.style.display="flex"
+        rotationDisclaimer.style.opacity="1"
+    }
+    else
+    {
+        rotationDisclaimer.style.display="none"
+        rotationDisclaimer.style.opacity="0"
+    }
+});
