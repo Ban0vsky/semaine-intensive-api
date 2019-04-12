@@ -270,7 +270,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    bottom: 15vh;
+    bottom: 13vh;
     opacity:0;
     z-index: -99999;
 }
@@ -427,7 +427,7 @@ body{
     background-color: white;
     display: flex;
     flex-flow: column;
-    top: 20vh;
+    top: 15vh;
     left: 11vw;
     border-radius: 5px;
     color: #EDC02C;
@@ -542,7 +542,7 @@ body{
     opacity: 0;
     z-index: -99999;
     position: absolute;
-    height: 55vh;
+    height: 45vh;
     width: 76vw;
     background-color: white;
     display: flex;
@@ -553,6 +553,7 @@ body{
     color: #EDC02C;
     align-items: center;
     font-weight: 300;
+    justify-content: space-between;
 }
 .recapTotal{
     display: flex;
@@ -744,8 +745,23 @@ a{
 
 }
 
+.applyFinishBarathon{
+    width: 100%;
+    padding: 2vh 0;
+    text-align: center;
+    background-color: #ecbf2b;
+    border-radius: 0px 0px 5px 5px;
+}
+.endedBarathonValidateText{
+    color: white;
+    font-size: 1em;
+}
+
 .endScreenData{
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: 45vh;
+    justify-content: space-between;
+    text-align: center;
 }

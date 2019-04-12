@@ -4,9 +4,20 @@ include '../views/partials/header.php';
 include '../controllers/requests.php';
 include '../controllers/errors.php'; 
 ?>
-     <div class="lottieAnimation">
-        <div class="lottieJson"></div>
-    </div>
+    <?php 
+    if (isset($_SESSION["noMoreAnimation"]))
+    {
+        echo('<div class="noMoreAnimation"></div>');
+    }
+    else {
+        echo('    
+        <div class="lottieAnimation">
+            <div class="lottieJson"></div>
+        </div>
+    ');
+    }
+    ?>
+
     <div class="card">
         <div class="name"></div>
         <div class="address"></div>
@@ -33,3 +44,4 @@ include '../controllers/errors.php';
     <script src="../public/assets/map.js"></script>
 
 <?php include '../views/partials/footer.php' ?>
+<?php $_SESSION["noMoreAnimation"] = "yes" ?>
