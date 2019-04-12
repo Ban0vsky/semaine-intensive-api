@@ -10,10 +10,12 @@ Vous allez cliquer jusqu'à plus soif ! La meilleure application de barathon est
 ## Fonctionnalités
 
 - Création de compte utilisateur
-- Liste d'amis et gestion de la liste (Ajout, validation, statut, suppression)
+- Connection à son compte
+- Informations relatives à son compte dans le profil (score total personnel, rang mondial)
+- Liste d'amis et gestion de la liste (Ajout par recherche de pseudo, validation ou refus d'invitation, informations sur amis (pseudo,score,rang), suppression d'amis et de demande en amis)
 - Déconnexion et suppression de compte
-- Historique personnel
-- Leaderboard global
+- Historique personnel de barathon avec score et date de chaque barathon
+- Leaderboard des 5 meilleurs buveurs mondiaux
 - Recherche des 10 meilleurs bars autour d'une position par pertinence et proximité
 - Recherche par adresse ou par géolocalisation
 - Heatmap des bars affichés en fonction de leurs notes
@@ -23,6 +25,20 @@ Vous allez cliquer jusqu'à plus soif ! La meilleure application de barathon est
 - Calcul du score avec un algorithme faisant le rapport entre consommation, temps et nombre de bars visités
 - Récapitulatif en fin de barathon
 - Animation 
+
+## Fonctionnalités envisées pour de prochaines itérations
+
+- Défis entre amis
+- Partager photos du barathon
+- Partager sa localisation
+- Uploader une photo de profil
+- Invitation par lien 
+- Ouvrir à d'autres villes
+- Partage de son score sur les réseaux sociaux
+- Développer une version react native
+- Ajouter des animations
+- Améliorer l'UI 
+
 
 ## Langages utilisés
 
@@ -63,12 +79,34 @@ Vous allez cliquer jusqu'à plus soif ! La meilleure application de barathon est
 - Cyrille Banovsky
 - Yoan Gross 
 
+#### Développeurs readme.me
+
+- Quentin Maillard
+- Lucas Lehot
+- Cyrille Banovsky
+- Yoan Gross
+
 #### Designers
 
 - Quentin Maillard
 - Lucas Lehot
 - Cyrille Banovsky
 - Yoan Gross 
+
+### Remerciements 
+
+- Bruno Simon
+- Hétic
+- Nos familles respectives
+- L'ami Burger King
+- Vince pour les intimes
+- Les 12kg de tabac
+- Les nuits blanches
+- La caféine
+- La vie
+- Le 300m3 de Lucas et sa fibre optique
+- Les problèmes de routing lors de la mise en prod à 7h du mat'
+
 
 
 
