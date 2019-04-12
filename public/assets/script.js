@@ -23,7 +23,7 @@ const notificationButton = document.querySelector('.notificationButton')
 const friendRequestData = document.querySelector('.friendRequestData')
 
 deleteAccountButton.addEventListener('click', () => {
-  console.log('oui')
+  console.log()
     killAccount.classList.add('visible')
     killAccountData.classList.add('visible')
     profilePage.classList.remove('visible')
@@ -48,32 +48,18 @@ setTimeout(function() {
     }, 600);
 }, 4000);
 
-<<<<<<< HEAD
 
-lottie.loadAnimation({
-    container: lottieAnimation,
-=======
 if(document.querySelector('.noMoreAnimation'))
 {
   lottie.loadAnimation(
   {
     container: lottieAnimation, 
->>>>>>> f9f59ba208708724c8beada0c3da03933f712527
     renderer: 'svg',
     loop: false,
     autoplay: true,
     path: './assets/beer.json'
-<<<<<<< HEAD
-});
-=======
   });
 }
-
-
->>>>>>> f9f59ba208708724c8beada0c3da03933f712527
-
-
-
 
 history.addEventListener('click', () => {
     let visible = document.querySelectorAll('.visible')
