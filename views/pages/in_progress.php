@@ -44,7 +44,7 @@
         </div>
         <form class="applyFinishBarathon" action="../public" method="get">
             <input type="hidden" name="xfpp" value="" class="transfertScore">
-            <input class="endedBarathonValidateText" type="submit" value="Et z'est rebartit !">
+            <input class="endedBarathonValidateText" type="submit" value="Toujours debout ? Clique ici">
         </form>
     </div>
 </div>
