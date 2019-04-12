@@ -17,11 +17,6 @@ let recapBars = document.querySelector('.recapBars')
 let transfertScore = document.querySelector('.transfertScore')
 
 
-
-
-
-
-
 launch.addEventListener('click', () =>
 {
   let visible = document.querySelectorAll('.visible')
@@ -61,7 +56,6 @@ stopButton.addEventListener('click', () =>
     recapBars.innerHTML = recapBars.innerHTML + barsDone[m] + ", "
   }
   transfertScore.setAttribute('value', finalScoreCount)
-
 })
 
 let startTime = 0

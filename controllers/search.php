@@ -15,5 +15,4 @@ if (isset($_POST['search']))
     $search_result = $prepare->fetch();
 }
 
-
 ?>
