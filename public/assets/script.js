@@ -8,8 +8,6 @@ const leaderboardData = document.querySelector('.leaderboardData')
 const friendListData = document.querySelector('.friendListData')
 const downBarInfos = document.querySelector('.downBarInfos')
 let closeButton = document.querySelectorAll('.closeButton')
-let lottieAnimation = document.querySelector('.lottieJson')
-let lottieContainer = document.querySelector('.lottieAnimation')
 const profilePage = document.querySelector('.profilePage')
 const profileData = document.querySelector('.profileData')
 const killAccount = document.querySelector('.killAccount')
@@ -108,26 +106,6 @@ for (var j = 0; j < closeButton.length; j++) {
             visible[i].classList.remove('visible')
         }
     })
-}
-
-if(!document.querySelector('.noMoreAnimation'))
-{
-  setTimeout(function() 
-  {
-    lottieContainer.style.opacity = "0"
-    setTimeout(function() {
-        lottieContainer.style.display = "none"
-    }, 600);
-  }, 4000);
-
-  lottie.loadAnimation(
-  {
-    container: lottieAnimation, 
-    renderer: 'svg',
-    loop: false,
-    autoplay: true,
-    path: './assets/beer.json'
-  });
 }
 
 

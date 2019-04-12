@@ -4,6 +4,9 @@ include '../views/partials/header.php';
 include '../controllers/requests.php';
 include '../controllers/errors.php'; 
 ?>
+    <div class="rotationDisclaimer">
+    <p>Oulah, ça tourne ! Repassez en Portrait, la vue est plus belle ;)</p>
+    </div>
     <div class="card">
         <div class="name">NAME</div>
         <div class="address">ADDRESS</div>

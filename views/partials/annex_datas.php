@@ -5,7 +5,6 @@
    include '../controllers/search.php';
    include '../controllers/friends.php';
 ?>
-
 <div class="profilePage">
    <img class="closeButton" src="assets/images/cancel.svg" alt="profile_placeholder">
    <img class="signupImage" src="assets/images/profilepic.png" alt="profile_placeholder">
