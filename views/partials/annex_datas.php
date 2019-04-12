@@ -76,7 +76,7 @@
                             if ($friends_data[$i]->is_pending) {
                                 echo("<p>(en attente)</p>");
                             }
-                            echo ('<p>score : '.$result['score'].'</p>');
+                            echo ('<p>score : '.$result->score.'</p>');
                     
                             $query = $db->prepare("SELECT COUNT(*) as rang FROM users WHERE score >= (SELECT score  FROM users WHERE username =:username ORDER BY score)"); 
                             $query->execute(
@@ -177,7 +177,7 @@
         </form>
 
         <?php if(isset($_POST['search']) && $search_result): ?>
-            <p><?= $search_result->username ?></p>
+            <p><?= $search_result->username?></p>
             <?php 
                 echo (" 
                     <form action='#' method='post'>
