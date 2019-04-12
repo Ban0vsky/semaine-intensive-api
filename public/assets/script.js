@@ -1,6 +1,5 @@
 const loginImage = document.querySelector('.loginImage')
 const background = document.querySelector('.map')
-const start = document.querySelector('.start')
 const history = document.querySelector('.history')
 const leaderboard = document.querySelector('.leaderboard')
 const friendList = document.querySelector('.friendList')
