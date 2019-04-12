@@ -663,7 +663,8 @@ body{
     border-radius: 5px;
     position:absolute;
     margin-top: 0;
-
+    opacity: 0;
+    z-index: -9999;
 }
 .search{
     width: 100%;
