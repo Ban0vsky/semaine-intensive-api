@@ -476,10 +476,15 @@ body{
 .birzFriend{
     height:2.5vh;
 }
+.friendListData{
+    width: 80%;
+}
 .friendContent{
     display: flex;
     flex-direction: column;
+    width: 80%;
     height: 30vh;
+    margin: auto;
 }
 .friendsContainer{
     width: 50vw;
@@ -663,6 +668,8 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
+    width: 80%;
 }
 .addFriendData{
     background-color: #fff;
