@@ -610,6 +610,21 @@ body{
     text-align: center;
     font-size: 2.2em;
 }
+.historyScore{
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.historyScoreBlock{
+    width: 20vw;
+    display: flex;
+}
+.score{
+    margin-right: 2vw;
+}
 .addFriendButton{
     background: #EDC02C;
     color: white;
