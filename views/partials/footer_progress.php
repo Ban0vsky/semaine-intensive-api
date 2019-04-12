@@ -4,5 +4,6 @@
         <img src="assets/images/cheers.svg" class="friendList downIcon">
     </div>
     <script src="assets/script_progress.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
