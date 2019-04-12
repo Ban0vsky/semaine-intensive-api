@@ -1,5 +1,5 @@
 <div class="error">
-<?php  if (count($errors) > 0) : ?>
+<?php  if (!empty($errors)) : ?>
 	<script>document.querySelector('.error').style.display="flex"</script>
 	<div class="alertPopup">
 		<?php foreach ($errors as $error) : ?>
@@ -7,6 +7,7 @@
 		<?php endforeach ?>
 	</div>
 <?php  endif ?>
+<?php $errors=[] ?>
 <script>document.querySelector('.error').addEventListener('click', () =>
 {
 	document.querySelector('.error').style.display="none"
